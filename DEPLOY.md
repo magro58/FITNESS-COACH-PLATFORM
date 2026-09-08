@@ -14,14 +14,17 @@ da internet. Il modo più veloce e gratuito:
 
 1. Vai su **[neon.tech](https://neon.tech)** (o in alternativa Supabase, Railway) e crea
    un progetto gratuito.
-2. Copia la **connection string** (tipo
-   `postgresql://user:password@ep-xxx.neon.tech/neondb?sslmode=require`).
-3. Applica le migrazioni e carica il catalogo esercizi contro questo database, dal tuo
-   computer/da qui:
+2. Neon ti dà due connection string: una **pooled** (per l'app a runtime) e una
+   **diretta/unpooled** (usata solo per le migrazioni). Servono entrambe, vedi punto 3.
+3. Le migrazioni (creazione tabelle) partono **da sole ad ogni build** — lo script
+   `npm run build` esegue `prisma migrate deploy` prima di compilare l'app, quindi
+   basta impostare le variabili d'ambiente corrette su Netlify (punto successivo) e il
+   primo deploy crea lo schema automaticamente.
+4. Il catalogo esercizi va invece caricato una volta, da un ambiente con normale
+   accesso a internet (il tuo computer, non necessariamente questa sessione):
 
    ```bash
-   DATABASE_URL="<connection string di neon>" npx prisma migrate deploy
-   DATABASE_URL="<connection string di neon>" npm run db:seed
+   DATABASE_URL="<connection string diretta di neon>" npm run db:seed
    ```
 
 ## 2. Crea il sito su Netlify
@@ -41,7 +44,8 @@ Nel sito Netlify → **Site configuration → Environment variables**, aggiungi:
 
 | Chiave | Valore |
 |---|---|
-| `DATABASE_URL` | la connection string di Neon/Supabase (punto 1) |
+| `DATABASE_URL` | connection string **pooled** di Neon/Supabase (usata dall'app a runtime) |
+| `DIRECT_URL` | connection string **diretta/unpooled** (usata solo da `prisma migrate deploy` durante la build) |
 | `AUTH_SECRET` | una stringa lunga e casuale — generala con `openssl rand -base64 48` |
 | `NEXT_PUBLIC_APP_URL` | l'URL che Netlify ti assegna, es. `https://tuosito.netlify.app` |
 | `STORAGE_DIR` | `/tmp/storage` (vedi limitazione sotto — su Netlify è temporaneo) |
