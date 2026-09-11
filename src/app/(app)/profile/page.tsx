@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/Button";
 import { Input, Label, Textarea } from "@/components/ui/Input";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/Card";
 import { useToast } from "@/components/ui/Toast";
-import { defaultAvatarConfig, type AvatarConfig } from "@/lib/avatar";
+import { defaultAvatarConfig, isValidAvatarConfig, type AvatarConfig } from "@/lib/avatar";
 import { cn } from "@/lib/cn";
 import { TrainerLinkCard } from "@/components/TrainerLinkCard";
 
@@ -25,7 +25,9 @@ export default function ProfilePage() {
   const [useAvatar, setUseAvatar] = useState(user.profile?.useAvatar ?? true);
   const [hasPhoto, setHasPhoto] = useState(!!user.profile?.photoUrl);
   const [avatarConfig, setAvatarConfig] = useState<AvatarConfig>(
-    user.profile?.avatarConfig ?? defaultAvatarConfig(user.id)
+    isValidAvatarConfig(user.profile?.avatarConfig)
+      ? user.profile.avatarConfig
+      : defaultAvatarConfig(user.id)
   );
   const [photoVersion, setPhotoVersion] = useState(0);
   const [savingProfile, setSavingProfile] = useState(false);

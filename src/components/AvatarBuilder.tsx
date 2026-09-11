@@ -1,23 +1,45 @@
 "use client";
 
-import { AVATAR_OPTIONS, type AvatarConfig } from "@/lib/avatar";
+import { AVATAR_OPTIONS, NONE, type AvatarConfig } from "@/lib/avatar";
 import { AvatarRenderer } from "@/components/Avatar";
 import { cn } from "@/lib/cn";
 
 const LABELS: Record<keyof typeof AVATAR_OPTIONS, string> = {
-  faceShape: "Forma del viso",
-  skinTone: "Colore pelle",
-  hairStyle: "Capelli",
+  top: "Capelli / copricapo",
   hairColor: "Colore capelli",
   facialHair: "Barba",
-  eyeStyle: "Occhi",
-  accessory: "Accessorio",
-  outfit: "Abbigliamento",
-  outfitColor: "Colore abbigliamento",
-  background: "Sfondo",
+  facialHairColor: "Colore barba",
+  eyes: "Occhi",
+  eyebrows: "Sopracciglia",
+  mouth: "Bocca",
+  skinColor: "Colore pelle",
+  accessories: "Accessori",
+  accessoriesColor: "Colore accessori",
+  clothing: "Abbigliamento",
+  clothesColor: "Colore abbigliamento",
+  backgroundColor: "Sfondo",
 };
 
-const COLOR_FIELDS = new Set(["skinTone", "hairColor", "outfitColor", "background"]);
+const COLOR_FIELDS = new Set([
+  "hairColor",
+  "facialHairColor",
+  "skinColor",
+  "accessoriesColor",
+  "clothesColor",
+  "backgroundColor",
+]);
+
+const NONE_LABEL: Partial<Record<keyof typeof AVATAR_OPTIONS, string>> = {
+  facialHair: "Nessuna",
+  accessories: "Nessuno",
+};
+
+function humanize(option: string): string {
+  return option
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/([A-Za-z])(\d)/g, "$1 $2")
+    .replace(/^./, (c) => c.toUpperCase());
+}
 
 export function AvatarBuilder({
   config,
@@ -45,29 +67,30 @@ export function AvatarBuilder({
                     <button
                       key={option}
                       type="button"
-                      title={option}
+                      title={`#${option}`}
                       onClick={() => onChange({ ...config, [key]: option })}
                       className={cn(
                         "h-9 w-9 rounded-full border-2 transition",
                         active ? "border-primary scale-110" : "border-border"
                       )}
-                      style={{ background: option }}
+                      style={{ background: `#${option}` }}
                     />
                   );
                 }
+                const label = option === NONE ? (NONE_LABEL[key] ?? "Nessuno") : humanize(option);
                 return (
                   <button
                     key={option}
                     type="button"
                     onClick={() => onChange({ ...config, [key]: option })}
                     className={cn(
-                      "rounded-full border px-3 py-1.5 text-xs font-medium capitalize transition",
+                      "rounded-full border px-3 py-1.5 text-xs font-medium transition",
                       active
                         ? "border-primary bg-primary/10 text-primary"
                         : "border-border text-muted-foreground hover:border-primary/40"
                     )}
                   >
-                    {option.replace("-", " ")}
+                    {label}
                   </button>
                 );
               })}
