@@ -30,3 +30,22 @@ export async function assertTrainerOwnsStudent(trainerId: string, studentId: str
   }
   return rel;
 }
+
+/**
+ * Links (or re-links, e.g. moving a student to a different trainer) a
+ * student to a trainer. `studentId` is unique on TrainerStudent, so a
+ * student only ever has one row — creating or updating it as needed.
+ */
+export async function linkTrainerAndStudent(trainerId: string, studentId: string) {
+  const existing = await prisma.trainerStudent.findUnique({ where: { studentId } });
+  return existing
+    ? prisma.trainerStudent.update({ where: { studentId }, data: { trainerId, status: "ACTIVE" } })
+    : prisma.trainerStudent.create({ data: { trainerId, studentId } });
+}
+
+/** Marks a student's relationship as removed, if one is currently active. Returns it, or null if there was none. */
+export async function unlinkStudent(studentId: string) {
+  const existing = await prisma.trainerStudent.findUnique({ where: { studentId } });
+  if (!existing || existing.status !== "ACTIVE") return null;
+  return prisma.trainerStudent.update({ where: { studentId }, data: { status: "REMOVED" } });
+}

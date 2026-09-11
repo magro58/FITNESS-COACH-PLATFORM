@@ -17,6 +17,7 @@
   --danger: #dc2626;
   --danger-foreground: #ffffff;
   --warning: #d97706;
+  --warning-foreground: #fffbeb;
   --ring: #16a34a;
   --radius: 0.9rem;
 }
@@ -36,6 +37,7 @@
   --danger: #f87171;
   --danger-foreground: #450a0a;
   --warning: #fbbf24;
+  --warning-foreground: #451a03;
   --ring: #22c55e;
 }
 
@@ -54,6 +56,7 @@
   --color-danger: var(--danger);
   --color-danger-foreground: var(--danger-foreground);
   --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
   --color-ring: var(--ring);
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 0.25rem);

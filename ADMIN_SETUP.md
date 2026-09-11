@@ -42,6 +42,18 @@ npm run admin:promote -- mario@esempio.it --revoke
   la sessione attiva, senza cancellare nulla) o **eliminarlo** definitivamente
   (cancella anche schede, allenamenti, media e ticket collegati — azione non
   reversibile).
+- **Accesso come un altro utente** (dalla scheda di un account in
+  `/admin/users/<id>`, pulsante "Accedi come questo utente"): l'admin entra
+  con i pieni permessi di quel PT o Allievo — dashboard, schede, allenamenti,
+  tutto — per testare o verificare un problema segnalato. Mentre è attivo
+  compare una barra in alto ("Stai visualizzando l'app come...") con un
+  pulsante per tornare al pannello admin in un click. Non è possibile
+  impersonare un altro admin, né un account disabilitato.
+- **Collegamenti PT ↔ Allievo** (`/admin/links`): collega manualmente un
+  Allievo a un Personal Trainer (utile se un codice invito non ha funzionato
+  o serve assistenza), riassegna un allievo a un PT diverso, o rimuove un
+  collegamento — entrambe le parti ricevono una notifica. La pagina evidenzia
+  anche gli allievi che al momento non hanno nessun PT collegato.
 
 Un account admin **non ha una propria dashboard PT/Allievo** — è un ruolo
 separato, pensato solo per la gestione della piattaforma. Se serve continuare a

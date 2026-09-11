@@ -48,6 +48,11 @@ export const adminUpdateUserSchema = z.object({
   isActive: z.boolean(),
 });
 
+export const adminLinkSchema = z.object({
+  trainerId: z.string().min(1, "Seleziona un Personal Trainer"),
+  studentId: z.string().min(1, "Seleziona un Allievo"),
+});
+
 export const loginSchema = z.object({
   email: z.string().trim().toLowerCase().email("Email non valida"),
   password: z.string().min(1, "Password richiesta"),

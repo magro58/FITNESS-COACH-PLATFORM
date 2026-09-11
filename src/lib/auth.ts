@@ -16,6 +16,10 @@ function getSecretKey() {
 export interface SessionPayload {
   userId: string;
   role: Role;
+  // Present only while an admin is "viewing as" this account for testing/
+  // support purposes — holds the admin's own user id so the session can be
+  // handed back to them (see /api/admin/impersonate, /api/admin/stop-impersonation).
+  impersonatedBy?: string;
   [key: string]: unknown;
 }
 

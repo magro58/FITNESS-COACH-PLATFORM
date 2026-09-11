@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
-import { LayoutDashboard, Users, LifeBuoy, ShieldCheck, LogOut, ChevronDown } from "lucide-react";
+import { LayoutDashboard, Users, LifeBuoy, ShieldCheck, LogOut, ChevronDown, Link2 } from "lucide-react";
 import { cn } from "@/lib/cn";
 import { useCurrentUser } from "@/components/user-context";
 import { NotificationBell } from "@/components/NotificationBell";
@@ -12,6 +12,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 const adminNav = [
   { href: "/admin", label: "Dashboard", icon: LayoutDashboard, exact: true },
   { href: "/admin/users", label: "Utenti", icon: Users },
+  { href: "/admin/links", label: "Collegamenti", icon: Link2 },
   { href: "/admin/tickets", label: "Ticket", icon: LifeBuoy },
 ];
 
@@ -80,7 +81,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
 
         <main className="flex-1 px-4 pb-24 pt-4 md:px-6 md:pb-8 md:pt-6">{children}</main>
 
-        <nav className="fixed bottom-0 left-0 right-0 z-40 grid grid-cols-3 border-t border-border bg-card/95 backdrop-blur md:hidden">
+        <nav className="fixed bottom-0 left-0 right-0 z-40 grid grid-cols-4 border-t border-border bg-card/95 backdrop-blur md:hidden">
           {adminNav.map((item) => {
             const active = item.exact ? pathname === item.href : pathname.startsWith(item.href);
             const Icon = item.icon;

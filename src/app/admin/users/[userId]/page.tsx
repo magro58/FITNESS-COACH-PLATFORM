@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { format } from "date-fns";
 import { it } from "date-fns/locale";
-import { ArrowLeft, Ban, CheckCircle2, Trash2, Mail, Calendar, LifeBuoy } from "lucide-react";
+import { ArrowLeft, Ban, CheckCircle2, Trash2, Mail, Calendar, LifeBuoy, Eye } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
@@ -86,6 +86,21 @@ export default function AdminUserDetailPage() {
     }
   }
 
+  const [impersonating, setImpersonating] = useState(false);
+
+  async function impersonate() {
+    setImpersonating(true);
+    try {
+      const res = await fetch(`/api/admin/impersonate/${userId}`, { method: "POST" });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? "Errore");
+      window.location.href = "/dashboard";
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "Errore");
+      setImpersonating(false);
+    }
+  }
+
   if (user === null) {
     return (
       <div className="mx-auto max-w-2xl space-y-4 animate-fade-in">
@@ -162,6 +177,12 @@ export default function AdminUserDetailPage() {
             <CardTitle>Azioni</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col gap-3 sm:flex-row">
+            {user.isActive && (
+              <Button variant="secondary" loading={impersonating} onClick={impersonate}>
+                <Eye size={16} />
+                Accedi come questo utente
+              </Button>
+            )}
             <Button variant={user.isActive ? "outline" : "primary"} loading={busy} onClick={toggleActive}>
               {user.isActive ? <Ban size={16} /> : <CheckCircle2 size={16} />}
               {user.isActive ? "Disabilita account" : "Riattiva account"}

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Users, Dumbbell, GraduationCap, ShieldCheck, LifeBuoy, UserX } from "lucide-react";
+import { Users, Dumbbell, GraduationCap, ShieldCheck, LifeBuoy, UserX, Link2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/Card";
 import { Skeleton } from "@/components/ui/Skeleton";
 
@@ -86,6 +86,23 @@ export default function AdminDashboardPage() {
           </div>
           <Link href="/admin/users" className="text-sm font-medium text-primary hover:underline">
             Vai alla gestione utenti →
+          </Link>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent className="flex flex-col gap-3 py-5 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-center gap-3">
+            <Link2 size={18} className="text-primary" />
+            <div>
+              <p className="text-sm font-medium">Collegamenti PT ↔ Allievo</p>
+              <p className="text-xs text-muted-foreground">
+                Collega, riassegna o rimuovi il legame tra un PT e un allievo
+              </p>
+            </div>
+          </div>
+          <Link href="/admin/links" className="text-sm font-medium text-primary hover:underline">
+            Vai ai collegamenti →
           </Link>
         </CardContent>
       </Card>
