@@ -1,16 +1,16 @@
 import { redirect } from "next/navigation";
 import { getCurrentUser, clearSessionCookie } from "@/lib/auth";
 import { UserProvider } from "@/components/user-context";
-import { AppShell } from "@/components/AppShell";
+import { AdminShell } from "@/components/AdminShell";
 
-export default async function AppLayout({ children }: { children: React.ReactNode }) {
+export default async function AdminLayout({ children }: { children: React.ReactNode }) {
   const user = await getCurrentUser();
   if (!user) redirect("/login");
   if (!user.isActive) {
     await clearSessionCookie();
     redirect("/login?disabled=1");
   }
-  if (user.role === "ADMIN") redirect("/admin");
+  if (user.role !== "ADMIN") redirect("/dashboard");
 
   const serializedUser = {
     id: user.id,
@@ -30,7 +30,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
 
   return (
     <UserProvider user={serializedUser}>
-      <AppShell>{children}</AppShell>
+      <AdminShell>{children}</AdminShell>
     </UserProvider>
   );
 }

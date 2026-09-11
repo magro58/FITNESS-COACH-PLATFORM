@@ -2,7 +2,8 @@
 
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Camera, Trash2, Sparkles, Save } from "lucide-react";
+import Link from "next/link";
+import { Camera, Trash2, Sparkles, Save, LifeBuoy, ChevronRight } from "lucide-react";
 import { useCurrentUser } from "@/components/user-context";
 import { AvatarRenderer } from "@/components/Avatar";
 import { AvatarBuilder } from "@/components/AvatarBuilder";
@@ -134,6 +135,21 @@ export default function ProfilePage() {
       </div>
 
       {user.role === "STUDENT" && <TrainerLinkCard />}
+
+      <Link href="/support">
+        <Card className="transition hover:border-primary/40 hover:bg-muted/40">
+          <CardContent className="flex items-center gap-3 py-4">
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary">
+              <LifeBuoy size={18} />
+            </div>
+            <div className="flex-1">
+              <p className="text-sm font-medium">Assistenza</p>
+              <p className="text-xs text-muted-foreground">Apri una richiesta o consulta i tuoi ticket</p>
+            </div>
+            <ChevronRight size={18} className="text-muted-foreground" />
+          </CardContent>
+        </Card>
+      </Link>
 
       <Card>
         <CardHeader>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Dumbbell, Loader2 } from "lucide-react";
@@ -19,6 +19,15 @@ function LoginForm({ configuredProviders }: { configuredProviders: OAuthProvider
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  useEffect(() => {
+    if (params.get("disabled") === "1") {
+      setError("Questo account è stato disabilitato. Contatta l'assistenza.");
+    } else if (params.get("error") === "oauth_failed") {
+      setError("Accesso con provider social non riuscito. Riprova.");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
@@ -36,7 +45,8 @@ function LoginForm({ configuredProviders }: { configuredProviders: OAuthProvider
         return;
       }
       toast.success("Bentornato!");
-      router.push(params.get("next") ?? "/dashboard");
+      const fallback = data.user?.role === "ADMIN" ? "/admin" : "/dashboard";
+      router.push(params.get("next") ?? fallback);
       router.refresh();
     } catch {
       setError("Errore di rete. Riprova.");

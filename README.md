@@ -99,6 +99,11 @@ storage/                    File caricati (foto profilo, media) — non servito
 - **Dashboard PT**: statistiche allievi, allenamenti recenti, nuovi record, allievi da
   monitorare, timeline attività.
 - **Dashboard Allievo**: prossimo allenamento, riepilogo settimana, record recenti.
+- **Assistenza e amministrazione**: ogni PT/Allievo può aprire ticket di assistenza
+  (`/support`) con categoria e messaggi; un ruolo `ADMIN` dedicato (nessuna
+  registrazione pubblica, va concesso manualmente — vedi `ADMIN_SETUP.md`) accede a
+  una sezione `/admin` separata per gestire i ticket (rispondere, cambiare stato) e le
+  utenze registrate (ricerca, dettaglio, disabilitazione, eliminazione account).
 - **Design**: dark/light mode, sidebar desktop, bottom navigation mobile, skeleton
   loading, empty state, animazioni leggere — PWA-ready (manifest + icone).
 

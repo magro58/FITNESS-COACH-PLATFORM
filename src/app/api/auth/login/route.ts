@@ -33,6 +33,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Credenziali non valide" }, { status: 401 });
   }
 
+  if (!user.isActive) {
+    return NextResponse.json(
+      { error: "Questo account è stato disabilitato. Contatta l'assistenza." },
+      { status: 403 }
+    );
+  }
+
   const token = await createSessionToken({ userId: user.id, role: user.role });
   await setSessionCookie(token);
 

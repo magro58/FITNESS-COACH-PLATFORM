@@ -12,6 +12,7 @@ const PUBLIC_PATHS = [
 ];
 const TRAINER_ONLY_PREFIXES = ["/students", "/plans"];
 const STUDENT_ONLY_PREFIXES = ["/my-plan", "/train", "/progress"];
+const ADMIN_PREFIX = "/admin";
 
 function getSecretKey() {
   const secret = process.env.AUTH_SECRET;
@@ -55,6 +56,26 @@ export async function proxy(request: NextRequest) {
   }
 
   if (authed && (pathname === "/login" || pathname === "/register")) {
+    const url = request.nextUrl.clone();
+    url.pathname = session?.role === "ADMIN" ? ADMIN_PREFIX : "/dashboard";
+    url.search = "";
+    return NextResponse.redirect(url);
+  }
+
+  // Admins get their own section; they don't use the trainer/student app shell.
+  // API routes are excluded here — they're authorized per-request by
+  // requireAdmin()/requireUser() in the handler, not by this page-level redirect.
+  if (authed && session?.role === "ADMIN") {
+    if (!pathname.startsWith("/api") && !pathname.startsWith(ADMIN_PREFIX)) {
+      const url = request.nextUrl.clone();
+      url.pathname = ADMIN_PREFIX;
+      url.search = "";
+      return NextResponse.redirect(url);
+    }
+    return NextResponse.next();
+  }
+
+  if (authed && !pathname.startsWith("/api") && pathname.startsWith(ADMIN_PREFIX)) {
     const url = request.nextUrl.clone();
     url.pathname = "/dashboard";
     url.search = "";

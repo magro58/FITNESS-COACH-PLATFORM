@@ -11,6 +11,7 @@ import {
   TrendingUp,
   Dumbbell,
   PlayCircle,
+  LifeBuoy,
 } from "lucide-react";
 import { cn } from "@/lib/cn";
 import { useCurrentUser } from "@/components/user-context";
@@ -24,6 +25,7 @@ const trainerNav = [
   { href: "/plans", label: "Schede", icon: ClipboardList },
   { href: "/media", label: "Media", icon: ImageIcon },
   { href: "/profile", label: "Profilo", icon: UserIcon },
+  { href: "/support", label: "Assistenza", icon: LifeBuoy },
 ];
 
 const studentNav = [
@@ -33,6 +35,7 @@ const studentNav = [
   { href: "/progress", label: "Progressi", icon: TrendingUp },
   { href: "/media", label: "Media", icon: ImageIcon },
   { href: "/profile", label: "Profilo", icon: UserIcon },
+  { href: "/support", label: "Assistenza", icon: LifeBuoy },
 ];
 
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -127,11 +130,11 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   );
 }
 
-function Badge({ role }: { role: "TRAINER" | "STUDENT" }) {
+function Badge({ role }: { role: "TRAINER" | "STUDENT" | "ADMIN" }) {
   return (
     <div className="flex items-center gap-2 rounded-md bg-muted px-3 py-2 text-xs font-medium text-muted-foreground">
       <span className={cn("h-2 w-2 rounded-full", role === "TRAINER" ? "bg-primary" : "bg-accent")} />
-      {role === "TRAINER" ? "Personal Trainer" : "Allievo"}
+      {role === "TRAINER" ? "Personal Trainer" : role === "STUDENT" ? "Allievo" : "Admin"}
     </div>
   );
 }

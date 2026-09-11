@@ -16,7 +16,8 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ user
     const requester = await requireUser();
     const { userId } = await params;
 
-    const allowed = requester.id === userId || (await areLinked(requester.id, userId));
+    const allowed =
+      requester.id === userId || requester.role === "ADMIN" || (await areLinked(requester.id, userId));
     if (!allowed) {
       return NextResponse.json({ error: "Non autorizzato" }, { status: 403 });
     }

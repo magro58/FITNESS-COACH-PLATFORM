@@ -90,7 +90,12 @@ export class AuthError extends Error {
 export async function requireUser() {
   const user = await getCurrentUser();
   if (!user) throw new AuthError("Non autenticato", 401);
+  if (!user.isActive) throw new AuthError("Account disabilitato", 403);
   return user;
+}
+
+export async function requireAdmin() {
+  return requireRole("ADMIN");
 }
 
 export async function requireRole(role: Role) {

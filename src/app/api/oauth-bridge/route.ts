@@ -25,9 +25,13 @@ export async function GET(req: NextRequest) {
   const existing = await prisma.user.findUnique({ where: { email } });
 
   if (existing) {
+    if (!existing.isActive) {
+      return NextResponse.redirect(new URL("/login?disabled=1", req.url));
+    }
     const token = await createSessionToken({ userId: existing.id, role: existing.role });
     await setSessionCookie(token);
-    return NextResponse.redirect(new URL("/dashboard", req.url));
+    const landing = existing.role === "ADMIN" ? "/admin" : "/dashboard";
+    return NextResponse.redirect(new URL(landing, req.url));
   }
 
   const name = session.user?.name?.trim() || email.split("@")[0];

@@ -30,6 +30,24 @@ export const completeOAuthSchema = z.object({
   inviteCode: z.string().trim().optional(),
 });
 
+export const createTicketSchema = z.object({
+  subject: z.string().trim().min(3, "Oggetto troppo corto").max(150),
+  category: z.enum(["TECHNICAL", "ACCOUNT", "BILLING", "OTHER"]).default("OTHER"),
+  message: z.string().trim().min(1, "Messaggio richiesto").max(4000),
+});
+
+export const ticketMessageSchema = z.object({
+  body: z.string().trim().min(1, "Messaggio richiesto").max(4000),
+});
+
+export const ticketStatusSchema = z.object({
+  status: z.enum(["OPEN", "IN_PROGRESS", "CLOSED"]),
+});
+
+export const adminUpdateUserSchema = z.object({
+  isActive: z.boolean(),
+});
+
 export const loginSchema = z.object({
   email: z.string().trim().toLowerCase().email("Email non valida"),
   password: z.string().min(1, "Password richiesta"),

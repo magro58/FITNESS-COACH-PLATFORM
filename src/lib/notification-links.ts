@@ -14,6 +14,8 @@ export function notificationHref(
       return `/media?tab=links&highlight=${n.resourceId}`;
     case "student":
       return role === "TRAINER" ? `/students/${n.resourceId}` : `/dashboard`;
+    case "ticket":
+      return role === "ADMIN" ? `/admin/tickets/${n.resourceId}` : `/support/${n.resourceId}`;
     default:
       return null;
   }
