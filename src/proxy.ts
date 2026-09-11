@@ -2,7 +2,14 @@ import { NextRequest, NextResponse } from "next/server";
 import { jwtVerify } from "jose";
 
 const SESSION_COOKIE = "fcp_session";
-const PUBLIC_PATHS = ["/login", "/register", "/api/auth/login", "/api/auth/register"];
+const PUBLIC_PATHS = [
+  "/login",
+  "/register",
+  "/api/auth/login",
+  "/api/auth/register",
+  "/api/auth/register-oauth",
+  "/api/oauth", // covers /api/oauth/* (NextAuth handshake) and /api/oauth-bridge
+];
 const TRAINER_ONLY_PREFIXES = ["/students", "/plans"];
 const STUDENT_ONLY_PREFIXES = ["/my-plan", "/train", "/progress"];
 

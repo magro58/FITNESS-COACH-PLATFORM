@@ -70,9 +70,13 @@ storage/                    File caricati (foto profilo, media) — non servito
 ## Funzionalità principali
 
 - **Autenticazione e ruoli**: registrazione PT/Allievo, login, logout, sessione
-  persistente, rotte protette per ruolo.
-- **Profilo e avatar**: foto profilo caricata oppure avatar SVG componibile (viso,
-  capelli, barba, colori, accessori, abbigliamento, sfondo).
+  persistente, rotte protette per ruolo. Login social opzionale con Google,
+  Microsoft e Apple (vedi `OAUTH_SETUP.md`) — l'account che si registra così
+  sceglie il ruolo al primo accesso, come nella registrazione normale.
+- **Profilo e avatar**: foto profilo caricata oppure avatar componibile generato
+  con [DiceBear](https://www.dicebear.com/) (viso, capelli, barba, colori,
+  accessori, abbigliamento, sfondo), generato sul server senza chiamate a API
+  esterne.
 - **Collegamento PT↔Allievo**: codice invito generato dal PT, collegamento
   dell'allievo (in fase di registrazione o successivamente dal profilo).
 - **Builder schede**: giorni multipli, esercizi con oltre 30 parametri configurabili

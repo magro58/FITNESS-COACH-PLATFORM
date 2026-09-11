@@ -19,12 +19,15 @@ enum Role {
 }
 
 model User {
-  id           String   @id @default(uuid())
-  email        String   @unique
-  passwordHash String
-  role         Role
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id            String   @id @default(uuid())
+  email         String   @unique
+  // Null for accounts created via an OAuth provider (Google/Microsoft/Apple)
+  // that never set a local password.
+  passwordHash  String?
+  oauthProvider String?
+  role          Role
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 
   profile Profile?
 

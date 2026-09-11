@@ -25,6 +25,11 @@ export const registerSchema = z.object({
   inviteCode: z.string().trim().optional(),
 });
 
+export const completeOAuthSchema = z.object({
+  role: z.enum(["TRAINER", "STUDENT"]),
+  inviteCode: z.string().trim().optional(),
+});
+
 export const loginSchema = z.object({
   email: z.string().trim().toLowerCase().email("Email non valida"),
   password: z.string().min(1, "Password richiesta"),

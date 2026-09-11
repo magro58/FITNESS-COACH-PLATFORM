@@ -48,6 +48,9 @@ Nel sito Netlify → **Site configuration → Environment variables**, aggiungi:
 | `DIRECT_URL` | connection string **diretta/unpooled** (usata solo da `prisma migrate deploy` durante la build) |
 | `AUTH_SECRET` | una stringa lunga e casuale — generala con `openssl rand -base64 48` |
 | `NEXT_PUBLIC_APP_URL` | l'URL che Netlify ti assegna, es. `https://tuosito.netlify.app` |
+
+Login social (Google/Microsoft/Apple) è opzionale e ha la sua guida dedicata:
+`OAUTH_SETUP.md` — richiede altre variabili solo se vuoi attivarlo.
 | `STORAGE_DIR` | `/tmp/storage` (vedi limitazione sotto — su Netlify è temporaneo) |
 
 ## 4. Deploy

@@ -15,7 +15,21 @@ export async function POST(req: NextRequest) {
   const { email, password } = parsed.data;
 
   const user = await prisma.user.findUnique({ where: { email }, include: { profile: true } });
-  if (!user || !(await verifyPassword(password, user.passwordHash))) {
+
+  if (!user) {
+    return NextResponse.json({ error: "Credenziali non valide" }, { status: 401 });
+  }
+
+  if (!user.passwordHash) {
+    return NextResponse.json(
+      {
+        error: `Questo account usa l'accesso con ${user.oauthProvider ?? "un provider esterno"}, non una password. Usa il pulsante di accesso social.`,
+      },
+      { status: 401 }
+    );
+  }
+
+  if (!(await verifyPassword(password, user.passwordHash))) {
     return NextResponse.json({ error: "Credenziali non valide" }, { status: 401 });
   }
 
