@@ -66,13 +66,9 @@ presso il tuo registrar.
 ## Limitazioni di questo deploy "intanto" (importanti)
 
 L'app è stata costruita per un server sempre acceso con disco persistente (vedi
-`README.md`, sezione sulla scelta dello stack). Su Netlify (serverless) due cose si
-comportano diversamente:
+`README.md`, sezione sulla scelta dello stack). Su Netlify (serverless) una cosa si
+comporta diversamente:
 
-- **Foto profilo e media caricati (foto/video)**: vengono scritti su disco temporaneo
-  della funzione serverless, che **viene svuotato tra un'invocazione e l'altra**. In
-  pratica: l'upload sembra funzionare al momento, ma la foto può sparire poco dopo.
-  Non è un bug della build, è un limite del filesystem effimero delle funzioni.
 - **Notifiche in tempo reale (SSE)**: il "push" istantaneo senza refresh (quello che
   ho verificato nel report) si basa su una connessione tenuta viva in memoria dal
   server. Su funzioni serverless la connessione può cadere o non ricevere l'evento se
@@ -80,27 +76,22 @@ comportano diversamente:
   comunque salvate nel database e **compaiono al refresh/prossima navigazione** — solo
   l'aggiornamento istantaneo "senza toccare nulla" non è garantito.
 
-Tutto il resto (autenticazione, schede, allenamenti, versionamento, analytics, ecc.)
-funziona esattamente come nel report, perché passa dal database, non dalla memoria del
-server o dal disco.
+~~Foto profilo e media caricati~~ — **risolto**: `src/lib/storage.ts` ora usa
+[Netlify Blobs](https://docs.netlify.com/build/data-and-storage/netlify-blobs/)
+(storage persistente nativo di Netlify, zero configurazione) quando gira su Netlify,
+e il filesystem locale in sviluppo — rilevato automaticamente, nessuna variabile
+d'ambiente da impostare.
 
-### Come rimuovere queste due limitazioni
+Tutto il resto (autenticazione, schede, allenamenti, versionamento, analytics, media,
+ecc.) funziona esattamente come nel report, perché passa dal database o da Netlify
+Blobs, non dalla memoria del server o dal disco locale.
 
-Il codice è stato scritto apposta per rendere questo un cambio isolato (un solo file
-per ciascuna delle due cose), non serve riscrivere l'app:
+### Come rimuovere anche questa limitazione
 
-1. **Storage persistente** → sostituire `src/lib/storage.ts` con
-   [Netlify Blobs](https://docs.netlify.com/build/data-and-storage/netlify-blobs/)
-   (nativo, gratuito, zero servizi esterni da configurare) oppure con Supabase Storage
-   o Cloudinary. Tutte le API (`/api/media`, `/api/profile/photo`, ecc.) restano
-   identiche perché chiamano solo `saveFile`/`readFile`/`deleteFile`.
-2. **Realtime affidabile** → sostituire `src/lib/realtime.ts` con un servizio esterno
+1. **Realtime affidabile** → sostituire `src/lib/realtime.ts` con un servizio esterno
    (Supabase Realtime, Pusher, Ably) o con un semplice polling lato client ogni 15-30
    secondi come fallback. Anche qui i chiamanti (`notify()`, il hook
    `useNotifications`) non cambiano.
-
-Se vuoi, posso implementare il punto 1 (Netlify Blobs) subito: è la scelta più
-naturale perché resta dentro l'ecosistema Netlify e non richiede account esterni.
 
 ---
 
