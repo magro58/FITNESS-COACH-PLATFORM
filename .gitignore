@@ -37,6 +37,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# netlify (local CLI state / build cache — never contains anything to commit)
+.netlify
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+
+[build.environment]
+  # The Turbopack build cache (.netlify/.next/cache/**) can end up with env
+  # values baked into its cache files during the build. That cache is never
+  # part of the published site — it's discarded after the build finishes —
+  # so it's a false positive for Netlify's secrets scanner. Omit it instead
+  # of disabling scanning altogether.
+  SECRETS_SCAN_OMIT_PATHS = ".netlify/.next/cache/**"
