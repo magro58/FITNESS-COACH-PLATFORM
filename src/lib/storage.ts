@@ -3,6 +3,9 @@ import path from "path";
 import { randomUUID } from "crypto";
 import { getStore } from "@netlify/blobs";
 import { put, del, get } from "@vercel/blob";
+import { extensionForMime } from "@/lib/mime";
+
+export { extensionForMime, MAX_UPLOAD_BYTES, ALLOWED_IMAGE_MIME, ALLOWED_VIDEO_MIME } from "@/lib/mime";
 
 // Object storage abstraction with three backends, selected automatically:
 //  - Netlify Blobs when running on Netlify (persists across function
@@ -24,20 +27,6 @@ const USE_NETLIFY_BLOBS = !!process.env.NETLIFY;
 const USE_VERCEL_BLOBS = !!process.env.VERCEL && !USE_NETLIFY_BLOBS;
 
 const STORAGE_ROOT = path.resolve(/*turbopackIgnore: true*/ process.cwd(), process.env.STORAGE_DIR ?? "./storage");
-
-const EXT_BY_MIME: Record<string, string> = {
-  "image/jpeg": "jpg",
-  "image/png": "png",
-  "image/webp": "webp",
-  "image/gif": "gif",
-  "video/mp4": "mp4",
-  "video/quicktime": "mov",
-  "video/webm": "webm",
-};
-
-export function extensionForMime(mimeType: string): string {
-  return EXT_BY_MIME[mimeType] ?? "bin";
-}
 
 export interface SaveResult {
   key: string;
@@ -119,8 +108,3 @@ function safeResolve(key: string): string {
   }
   return fullPath;
 }
-
-export const MAX_UPLOAD_BYTES = 100 * 1024 * 1024; // 100MB
-
-export const ALLOWED_IMAGE_MIME = new Set(["image/jpeg", "image/png", "image/webp", "image/gif"]);
-export const ALLOWED_VIDEO_MIME = new Set(["video/mp4", "video/quicktime", "video/webm"]);

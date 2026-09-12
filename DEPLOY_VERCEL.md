@@ -54,6 +54,18 @@ endpoint autenticati dell'app (`/api/media/[id]/file`,
 accedono ai file, e anche il file "grezzo" su Vercel Blob non è raggiungibile
 senza il token del progetto, non solo per il percorso non indovinabile.
 
+### Upload diretto dal browser (bypassa il limite di 4.5MB)
+
+Le funzioni serverless di Vercel accettano richieste fino a **4.5MB** — troppo
+poco per i video che PT e Allievi si scambiano (fino a 100MB). Per questo,
+quando l'app gira su Vercel (`NEXT_PUBLIC_DIRECT_UPLOAD`, impostato in automatico
+da `next.config.ts`), il browser carica il file **direttamente** su Vercel
+Blob (`src/lib/upload-client.ts`), autorizzato da un token temporaneo che il
+nostro server genera tramite `/api/blob/upload-token` — il file non passa mai
+dal nostro server, solo il suo riferimento (nome, dimensione, tipo) una volta
+caricato. Su Netlify e in locale questo meccanismo non serve ed è disattivato:
+i file continuano a passare dal server come sempre.
+
 ## 4. Notifiche realtime (SSE) — limite più stretto che su Netlify
 
 Le funzioni serverless di Vercel (piano Hobby gratuito) terminano dopo **10

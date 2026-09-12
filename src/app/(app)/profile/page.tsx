@@ -14,6 +14,7 @@ import { useToast } from "@/components/ui/Toast";
 import { defaultAvatarConfig, isValidAvatarConfig, type AvatarConfig } from "@/lib/avatar";
 import { cn } from "@/lib/cn";
 import { TrainerLinkCard } from "@/components/TrainerLinkCard";
+import { DIRECT_UPLOAD, uploadFileDirect } from "@/lib/upload-client";
 
 export default function ProfilePage() {
   const user = useCurrentUser();
@@ -84,9 +85,19 @@ export default function ProfilePage() {
     if (!file) return;
     setUploading(true);
     try {
-      const formData = new FormData();
-      formData.append("photo", file);
-      const res = await fetch("/api/profile/photo", { method: "POST", body: formData });
+      let res: Response;
+      if (DIRECT_UPLOAD) {
+        const { key, mimeType } = await uploadFileDirect(file, `photos/${user.id}`);
+        res = await fetch("/api/profile/photo", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ key, mimeType }),
+        });
+      } else {
+        const formData = new FormData();
+        formData.append("photo", file);
+        res = await fetch("/api/profile/photo", { method: "POST", body: formData });
+      }
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
       setHasPhoto(true);

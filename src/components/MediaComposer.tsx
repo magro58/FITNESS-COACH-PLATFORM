@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { Textarea, Select } from "@/components/ui/Input";
 import { useToast } from "@/components/ui/Toast";
 import { useCurrentUser } from "@/components/user-context";
+import { DIRECT_UPLOAD, uploadFileDirect } from "@/lib/upload-client";
 
 interface StudentOption {
   studentId: string;
@@ -43,13 +44,29 @@ export function MediaComposer({ onSent }: { onSent: () => void }) {
     }
     setSending(true);
     try {
-      const formData = new FormData();
-      formData.append("file", file);
-      formData.append("context", context);
-      if (note) formData.append("note", note);
-      if (recipientId) formData.append("recipientId", recipientId);
-
-      const res = await fetch("/api/media", { method: "POST", body: formData });
+      let res: Response;
+      if (DIRECT_UPLOAD) {
+        const { key, sizeBytes, mimeType } = await uploadFileDirect(file, `media/${user.id}`);
+        res = await fetch("/api/media", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            key,
+            sizeBytes,
+            mimeType,
+            context,
+            note: note || undefined,
+            recipientId: recipientId || undefined,
+          }),
+        });
+      } else {
+        const formData = new FormData();
+        formData.append("file", file);
+        formData.append("context", context);
+        if (note) formData.append("note", note);
+        if (recipientId) formData.append("recipientId", recipientId);
+        res = await fetch("/api/media", { method: "POST", body: formData });
+      }
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
 

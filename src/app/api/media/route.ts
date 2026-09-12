@@ -45,29 +45,68 @@ export async function GET(req: NextRequest) {
 export async function POST(req: NextRequest) {
   try {
     const user = await requireUser();
-    const form = await req.formData();
-    const file = form.get("file");
-    const context = String(form.get("context") ?? "GENERAL");
-    const note = form.get("note") ? String(form.get("note")) : null;
-    const recipientIdRaw = form.get("recipientId") ? String(form.get("recipientId")) : null;
-    const relatedExerciseLogId = form.get("relatedExerciseLogId") ? String(form.get("relatedExerciseLogId")) : null;
-    const relatedPlanExerciseId = form.get("relatedPlanExerciseId") ? String(form.get("relatedPlanExerciseId")) : null;
-    const relatedSessionId = form.get("relatedSessionId") ? String(form.get("relatedSessionId")) : null;
-    const relatedPlanId = form.get("relatedPlanId") ? String(form.get("relatedPlanId")) : null;
+    const isDirectUpload = (req.headers.get("content-type") ?? "").includes("application/json");
 
-    if (!(file instanceof File)) {
-      return NextResponse.json({ error: "Nessun file caricato" }, { status: 400 });
+    let file: File | null = null;
+    let directKey: string | null = null;
+    let directSizeBytes = 0;
+    let mimeType: string;
+    let context: string;
+    let note: string | null;
+    let recipientIdRaw: string | null;
+    let relatedExerciseLogId: string | null;
+    let relatedPlanExerciseId: string | null;
+    let relatedSessionId: string | null;
+    let relatedPlanId: string | null;
+
+    if (isDirectUpload) {
+      // File already uploaded straight to Vercel Blob by the browser (see
+      // src/lib/upload-client.ts) — we only received a reference to it.
+      const body = await req.json().catch(() => null);
+      directKey = typeof body?.key === "string" ? body.key : null;
+      directSizeBytes = typeof body?.sizeBytes === "number" ? body.sizeBytes : 0;
+      mimeType = typeof body?.mimeType === "string" ? body.mimeType : "";
+      context = String(body?.context ?? "GENERAL");
+      note = body?.note ? String(body.note) : null;
+      recipientIdRaw = body?.recipientId ? String(body.recipientId) : null;
+      relatedExerciseLogId = body?.relatedExerciseLogId ? String(body.relatedExerciseLogId) : null;
+      relatedPlanExerciseId = body?.relatedPlanExerciseId ? String(body.relatedPlanExerciseId) : null;
+      relatedSessionId = body?.relatedSessionId ? String(body.relatedSessionId) : null;
+      relatedPlanId = body?.relatedPlanId ? String(body.relatedPlanId) : null;
+
+      if (!directKey || !directKey.startsWith(`media/${user.id}/`)) {
+        return NextResponse.json({ error: "Upload non valido" }, { status: 400 });
+      }
+    } else {
+      const form = await req.formData();
+      const f = form.get("file");
+      if (!(f instanceof File)) {
+        return NextResponse.json({ error: "Nessun file caricato" }, { status: 400 });
+      }
+      file = f;
+      mimeType = f.type;
+      context = String(form.get("context") ?? "GENERAL");
+      note = form.get("note") ? String(form.get("note")) : null;
+      recipientIdRaw = form.get("recipientId") ? String(form.get("recipientId")) : null;
+      relatedExerciseLogId = form.get("relatedExerciseLogId") ? String(form.get("relatedExerciseLogId")) : null;
+      relatedPlanExerciseId = form.get("relatedPlanExerciseId") ? String(form.get("relatedPlanExerciseId")) : null;
+      relatedSessionId = form.get("relatedSessionId") ? String(form.get("relatedSessionId")) : null;
+      relatedPlanId = form.get("relatedPlanId") ? String(form.get("relatedPlanId")) : null;
     }
+
     if (!VALID_CONTEXTS.has(context)) {
       return NextResponse.json({ error: "Contesto non valido" }, { status: 400 });
     }
 
-    const isImage = ALLOWED_IMAGE_MIME.has(file.type);
-    const isVideo = ALLOWED_VIDEO_MIME.has(file.type);
+    const isImage = ALLOWED_IMAGE_MIME.has(mimeType);
+    const isVideo = ALLOWED_VIDEO_MIME.has(mimeType);
     if (!isImage && !isVideo) {
       return NextResponse.json({ error: "Formato file non supportato" }, { status: 400 });
     }
-    if (file.size > MAX_UPLOAD_BYTES) {
+    if (file && file.size > MAX_UPLOAD_BYTES) {
+      return NextResponse.json({ error: "File troppo grande" }, { status: 400 });
+    }
+    if (directKey && directSizeBytes > MAX_UPLOAD_BYTES) {
       return NextResponse.json({ error: "File troppo grande" }, { status: 400 });
     }
 
@@ -90,8 +129,15 @@ export async function POST(req: NextRequest) {
       recipientId = recipientIdRaw;
     }
 
-    const buffer = Buffer.from(await file.arrayBuffer());
-    const { key, sizeBytes } = await saveFile(`media/${user.id}`, buffer, file.type);
+    let key: string;
+    let sizeBytes: number;
+    if (file) {
+      const buffer = Buffer.from(await file.arrayBuffer());
+      ({ key, sizeBytes } = await saveFile(`media/${user.id}`, buffer, mimeType));
+    } else {
+      key = directKey!;
+      sizeBytes = directSizeBytes;
+    }
 
     const media = await prisma.media.create({
       data: {
@@ -99,7 +145,7 @@ export async function POST(req: NextRequest) {
         recipientId,
         type: isImage ? "IMAGE" : "VIDEO",
         url: key,
-        mimeType: file.type,
+        mimeType,
         sizeBytes,
         context: context as MediaContext,
         note,
