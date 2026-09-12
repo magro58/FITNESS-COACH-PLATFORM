@@ -2,24 +2,19 @@ import { promises as fs } from "fs";
 import path from "path";
 import { randomUUID } from "crypto";
 import { getStore } from "@netlify/blobs";
-import { put, del } from "@vercel/blob";
+import { put, del, get } from "@vercel/blob";
 
 // Object storage abstraction with three backends, selected automatically:
 //  - Netlify Blobs when running on Netlify (persists across function
 //    invocations — local disk on serverless functions is ephemeral and
 //    NOT shared between invocations, so it must not be used there).
-//  - Vercel Blob when running on Vercel (same reasoning — Vercel's function
-//    filesystem is ephemeral too). Unlike Netlify Blobs, Vercel Blob has no
-//    "private, get by key" mode: every blob gets a public URL (with a long
-//    random-looking pathname when addRandomSuffix isn't disabled). We keep
-//    our own authenticated route handlers (/api/media/[id]/file,
-//    /api/profile-photo/[userId]) as the only thing clients ever call — they
-//    check ownership/relationship first, then fetch the blob server-side and
-//    stream the bytes back — so nothing changes for callers of this module
-//    or for end users. The one real difference: the blob's own URL is not
-//    access-controlled by Vercel itself, only unguessable, unlike Netlify
-//    Blobs' or the local filesystem's true "nobody but our server can read
-//    this" guarantee.
+//  - Vercel Blob (private store) when running on Vercel, same reasoning.
+//    `access: "private"` means the blob requires the store's read-write
+//    token to fetch — like Netlify Blobs, nobody but our own server can read
+//    it, there is no public URL. Our route handlers (/api/media/[id]/file,
+//    /api/profile-photo/[userId]) remain the only thing clients ever call —
+//    they check ownership/relationship first, then read the blob server-side
+//    and stream the bytes back.
 //  - Local filesystem otherwise (plain dev, or a persistent-disk host).
 // Callers (see /api/media, /api/profile-photo, /api/profile/photo) only see
 // save/read/delete by key, so this is the single place that needs to change
@@ -27,10 +22,6 @@ import { put, del } from "@vercel/blob";
 
 const USE_NETLIFY_BLOBS = !!process.env.NETLIFY;
 const USE_VERCEL_BLOBS = !!process.env.VERCEL && !USE_NETLIFY_BLOBS;
-
-function isRemoteUrl(key: string): boolean {
-  return key.startsWith("http://") || key.startsWith("https://");
-}
 
 const STORAGE_ROOT = path.resolve(/*turbopackIgnore: true*/ process.cwd(), process.env.STORAGE_DIR ?? "./storage");
 
@@ -75,14 +66,12 @@ export async function saveFile(
   }
 
   if (USE_VERCEL_BLOBS) {
-    const blob = await put(key, buffer, {
-      access: "public",
+    await put(key, buffer, {
+      access: "private",
       contentType: mimeType,
       addRandomSuffix: false,
     });
-    // Store the full blob URL as the key — readFile/deleteFile below detect
-    // it by shape, so callers never need to know which backend is in use.
-    return { key: blob.url, sizeBytes: buffer.byteLength };
+    return { key, sizeBytes: buffer.byteLength };
   }
 
   const dir = path.join(/*turbopackIgnore: true*/ STORAGE_ROOT, subdir);
@@ -94,10 +83,12 @@ export async function saveFile(
 }
 
 export async function readFile(key: string): Promise<Buffer> {
-  if (isRemoteUrl(key)) {
-    const res = await fetch(key);
-    if (!res.ok) throw new Error(`Blob not found: ${key}`);
-    return Buffer.from(await res.arrayBuffer());
+  if (USE_VERCEL_BLOBS) {
+    const result = await get(key, { access: "private" });
+    if (!result || result.statusCode !== 200 || !result.stream) {
+      throw new Error(`Blob not found: ${key}`);
+    }
+    return Buffer.from(await new Response(result.stream).arrayBuffer());
   }
   if (USE_NETLIFY_BLOBS) {
     const data = await blobStore().get(key, { type: "arrayBuffer" });
@@ -109,7 +100,7 @@ export async function readFile(key: string): Promise<Buffer> {
 }
 
 export async function deleteFile(key: string): Promise<void> {
-  if (isRemoteUrl(key)) {
+  if (USE_VERCEL_BLOBS) {
     await del(key);
     return;
   }

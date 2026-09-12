@@ -34,25 +34,25 @@ dirette dirette che Neon accetta.
 ## 3. Storage dei file (foto profilo, media)
 
 `src/lib/storage.ts` rileva automaticamente Vercel (`process.env.VERCEL`) e usa
-[Vercel Blob](https://vercel.com/docs/storage/vercel-blob) invece del
-filesystem locale — va però **collegato uno store Blob al progetto**:
+[Vercel Blob](https://vercel.com/docs/vercel-blob) (store **privato**) invece
+del filesystem locale — va però **collegato uno store Blob al progetto**:
 
 1. Nel progetto su Vercel → tab **Storage** → **Create Database** → **Blob**.
-2. Collega lo store al progetto: Vercel inietta da solo la variabile
-   `BLOB_READ_WRITE_TOKEN` — non va copiata a mano.
-3. Rideploy (basta un push, o "Redeploy" dalla dashboard) perché la variabile
-   sia disponibile alle funzioni.
+2. **Access: Private** (opzione consigliata da Vercel stesso, lasciala
+   selezionata) — richiede un token per leggere i file, esattamente come
+   Netlify Blobs: nessun URL pubblico verso lo storage.
+3. Lascia spuntato "Add a read-write token env var to this connection" —
+   Vercel inietta da solo `BLOB_READ_WRITE_TOKEN` (oltre a `BLOB_STORE_ID` e
+   `BLOB_WEBHOOK_PUBLIC_KEY`), non va copiato a mano.
+4. Rideploy (basta un push, o "Redeploy" dalla dashboard) perché le variabili
+   siano disponibili alle funzioni.
 
-⚠️ Differenza rispetto a Netlify Blobs: Vercel Blob non ha una modalità
-"privata, leggibile solo dal server" — ogni file caricato ottiene un URL
-pubblico (con un percorso non indovinabile). Gli endpoint autenticati
-dell'app (`/api/media/[id]/file`, `/api/profile-photo/[userId]`) restano
-l'unico modo con cui client e browser accedono ai file — verificano prima chi
-sei, poi scaricano il file dal loro server e te lo inviano — quindi
-lato utente **non cambia nulla**. L'unica differenza reale è che l'URL diretto
-del file su Vercel Blob, se qualcuno lo scoprisse, non è protetto da
-autenticazione come lo era su Netlify Blobs o sul filesystem locale — è
-protetto solo dal fatto di essere impossibile da indovinare.
+Con lo store privato, la garanzia di sicurezza resta identica a quella
+descritta nel `README.md` ("nessun URL pubblico verso lo storage") — gli
+endpoint autenticati dell'app (`/api/media/[id]/file`,
+`/api/profile-photo/[userId]`) restano l'unico modo con cui client e browser
+accedono ai file, e anche il file "grezzo" su Vercel Blob non è raggiungibile
+senza il token del progetto, non solo per il percorso non indovinabile.
 
 ## 4. Notifiche realtime (SSE) — limite più stretto che su Netlify
 
