@@ -9,6 +9,8 @@ const PUBLIC_PATHS = [
   "/api/auth/register",
   "/api/auth/register-oauth",
   "/api/oauth", // covers /api/oauth/* (NextAuth handshake) and /api/oauth-bridge
+  "/demo", // public guest demo, no registration — see /api/demo/enter
+  "/api/demo",
 ];
 const TRAINER_ONLY_PREFIXES = ["/students", "/plans"];
 const STUDENT_ONLY_PREFIXES = ["/my-plan", "/train", "/progress"];

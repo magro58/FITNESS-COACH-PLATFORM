@@ -20,17 +20,21 @@ enum Role {
 }
 
 model User {
-  id            String   @id @default(uuid())
-  email         String   @unique
+  id              String    @id @default(uuid())
+  email           String    @unique
   // Null for accounts created via an OAuth provider (Google/Microsoft/Apple)
   // that never set a local password.
-  passwordHash  String?
-  oauthProvider String?
-  role          Role
+  passwordHash    String?
+  oauthProvider   String?
+  role            Role
   // Disabled by an admin: blocked at login, existing sessions rejected.
-  isActive      Boolean  @default(true)
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
+  isActive        Boolean   @default(true)
+  // Fixed public-demo account (see src/lib/demo.ts) — no password, entered
+  // only via /api/demo/enter, data wiped and reseeded on every entry.
+  isDemo          Boolean   @default(false)
+  lastDemoResetAt DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
 
   profile Profile?
 
@@ -62,7 +66,7 @@ model User {
 
   exercisesCreated Exercise[] @relation("ExerciseCreatedBy")
 
-  supportTickets       SupportTicket[] @relation("SupportTicketAuthor")
+  supportTickets        SupportTicket[] @relation("SupportTicketAuthor")
   supportTicketMessages TicketMessage[] @relation("SupportTicketMessageAuthor")
 
   @@index([role])

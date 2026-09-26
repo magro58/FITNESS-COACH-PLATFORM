@@ -4,6 +4,7 @@ import { prisma } from "@/lib/prisma";
 import { UserProvider } from "@/components/user-context";
 import { AppShell } from "@/components/AppShell";
 import { ImpersonationBanner } from "@/components/ImpersonationBanner";
+import { DemoBanner } from "@/components/DemoBanner";
 
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
   const user = await getCurrentUser();
@@ -45,6 +46,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
           adminEmail={impersonatingAdmin.email}
         />
       )}
+      {user.isDemo && <DemoBanner role={user.role as "TRAINER" | "STUDENT"} />}
       <AppShell>{children}</AppShell>
     </UserProvider>
   );

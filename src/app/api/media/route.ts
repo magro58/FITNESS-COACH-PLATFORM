@@ -45,6 +45,12 @@ export async function GET(req: NextRequest) {
 export async function POST(req: NextRequest) {
   try {
     const user = await requireUser();
+    if (user.isDemo) {
+      return NextResponse.json(
+        { error: "L'invio di media è disattivato nell'account demo" },
+        { status: 403 }
+      );
+    }
     const isDirectUpload = (req.headers.get("content-type") ?? "").includes("application/json");
 
     let file: File | null = null;

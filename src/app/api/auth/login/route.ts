@@ -20,6 +20,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Credenziali non valide" }, { status: 401 });
   }
 
+  if (user.isDemo) {
+    return NextResponse.json(
+      { error: "Questo è un account demo pubblico — entra dalla pagina /demo, non serve password." },
+      { status: 401 }
+    );
+  }
+
   if (!user.passwordHash) {
     return NextResponse.json(
       {

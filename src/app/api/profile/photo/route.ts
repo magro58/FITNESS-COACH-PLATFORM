@@ -6,6 +6,12 @@ import { saveFile, deleteFile, ALLOWED_IMAGE_MIME, MAX_UPLOAD_BYTES } from "@/li
 export async function POST(req: NextRequest) {
   try {
     const user = await requireUser();
+    if (user.isDemo) {
+      return NextResponse.json(
+        { error: "Il caricamento della foto è disattivato nell'account demo" },
+        { status: 403 }
+      );
+    }
     const isDirectUpload = (req.headers.get("content-type") ?? "").includes("application/json");
 
     let key: string;

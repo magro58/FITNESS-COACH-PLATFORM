@@ -30,6 +30,12 @@ export async function POST(req: NextRequest) {
     if (user.role === "ADMIN") {
       return NextResponse.json({ error: "Non disponibile per gli admin" }, { status: 403 });
     }
+    if (user.isDemo) {
+      return NextResponse.json(
+        { error: "L'invio di ticket è disattivato nell'account demo" },
+        { status: 403 }
+      );
+    }
 
     const body = await req.json().catch(() => null);
     const parsed = createTicketSchema.safeParse(body);

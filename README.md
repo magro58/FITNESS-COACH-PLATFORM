@@ -4,6 +4,11 @@ Piattaforma professionale per la gestione di Personal Trainer e Allievi: schede 
 allenamento versionate, modalità allenamento guidata, analisi e grafici su dati reali,
 media/link tra PT e allievo, notifiche in tempo reale.
 
+**Demo pubblica senza registrazione**: `/demo` — entra come Personal Trainer o come
+Allievo con un click, dati di esempio già pronti (scheda, allenamenti completati,
+record personali, grafici). I dati si azzerano e si rigenerano automaticamente ad
+ogni accesso.
+
 ## Stack tecnico
 
 - **Next.js 16** (App Router, TypeScript, React 19)
