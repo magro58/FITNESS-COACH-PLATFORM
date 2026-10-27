@@ -79,27 +79,35 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
           </div>
         </header>
 
-        <main className="flex-1 px-4 pb-24 pt-4 md:px-6 md:pb-8 md:pt-6">{children}</main>
+        <main className="flex-1 px-4 pb-28 pt-4 md:px-6 md:pb-8 md:pt-6">{children}</main>
 
-        <nav className="fixed bottom-0 left-0 right-0 z-40 grid grid-cols-4 border-t border-border bg-card/95 backdrop-blur md:hidden">
-          {adminNav.map((item) => {
-            const active = item.exact ? pathname === item.href : pathname.startsWith(item.href);
-            const Icon = item.icon;
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={cn(
-                  "flex flex-col items-center justify-center gap-0.5 py-2.5 text-[10px] font-medium transition",
-                  active ? "text-primary" : "text-muted-foreground"
-                )}
-              >
-                <Icon size={20} />
-                {item.label}
-              </Link>
-            );
-          })}
-        </nav>
+        <div className="fixed inset-x-0 bottom-0 z-40 px-3 pb-3 md:hidden">
+          <nav className="mx-auto flex max-w-md items-center justify-around rounded-[28px] border border-border/60 bg-card/95 px-2 py-2.5 shadow-xl backdrop-blur-md">
+            {adminNav.map((item) => {
+              const active = item.exact ? pathname === item.href : pathname.startsWith(item.href);
+              const Icon = item.icon;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="flex flex-1 flex-col items-center justify-center gap-1 py-1 text-[10px] font-medium"
+                >
+                  <span
+                    className={cn(
+                      "flex h-10 w-10 items-center justify-center rounded-full transition",
+                      active ? "bg-primary text-primary-foreground" : "text-muted-foreground"
+                    )}
+                  >
+                    <Icon size={20} />
+                  </span>
+                  <span className={cn("transition", active ? "text-primary" : "text-muted-foreground")}>
+                    {item.label}
+                  </span>
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
       </div>
     </div>
   );

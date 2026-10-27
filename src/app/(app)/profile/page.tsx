@@ -3,16 +3,16 @@
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { Camera, Trash2, Sparkles, Save, LifeBuoy, ChevronRight } from "lucide-react";
+import { Camera, Trash2, Sparkles, Save, LifeBuoy, ChevronRight, Pencil } from "lucide-react";
 import { useCurrentUser } from "@/components/user-context";
 import { AvatarRenderer } from "@/components/Avatar";
 import { AvatarBuilder } from "@/components/AvatarBuilder";
 import { Button } from "@/components/ui/Button";
 import { Input, Label, Textarea } from "@/components/ui/Input";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/Card";
+import { Dialog } from "@/components/ui/Dialog";
 import { useToast } from "@/components/ui/Toast";
 import { defaultAvatarConfig, isValidAvatarConfig, type AvatarConfig } from "@/lib/avatar";
-import { cn } from "@/lib/cn";
 import { TrainerLinkCard } from "@/components/TrainerLinkCard";
 import { DIRECT_UPLOAD, uploadFileDirect } from "@/lib/upload-client";
 
@@ -35,6 +35,7 @@ export default function ProfilePage() {
   const [savingProfile, setSavingProfile] = useState(false);
   const [savingAvatar, setSavingAvatar] = useState(false);
   const [uploading, setUploading] = useState(false);
+  const [avatarPickerOpen, setAvatarPickerOpen] = useState(false);
 
   const showingPhoto = hasPhoto && !useAvatar;
 
@@ -71,6 +72,7 @@ export default function ProfilePage() {
       });
       if (!res.ok) throw new Error();
       setUseAvatar(true);
+      setAvatarPickerOpen(false);
       toast.success("Avatar salvato");
       router.refresh();
     } catch {
@@ -208,9 +210,13 @@ export default function ProfilePage() {
                   <Trash2 size={15} /> Rimuovi foto
                 </Button>
               )}
-              {showingPhoto && (
+              {showingPhoto ? (
                 <Button type="button" variant="outline" size="sm" onClick={useAvatarInstead}>
                   <Sparkles size={15} /> Usa l&apos;avatar
+                </Button>
+              ) : (
+                <Button type="button" variant="outline" size="sm" onClick={() => setAvatarPickerOpen(true)}>
+                  <Pencil size={15} /> Cambia avatar
                 </Button>
               )}
             </div>
@@ -259,25 +265,25 @@ export default function ProfilePage() {
         </CardContent>
       </Card>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>Personalizza il tuo avatar</CardTitle>
-          <CardDescription>
-            Scegli viso, capelli, barba, colori, accessori, abbigliamento e sfondo.
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-4">
+      <Dialog
+        open={avatarPickerOpen}
+        onClose={() => setAvatarPickerOpen(false)}
+        title="Scegli il tuo avatar"
+        className="max-w-xl"
+      >
+        <div className="space-y-5">
+          <p className="text-sm text-muted-foreground">
+            Seleziona uno degli avatar disponibili, poi conferma per usarlo come immagine profilo.
+          </p>
+          <div className="flex justify-center">
+            <AvatarRenderer config={avatarConfig} size={88} className="rounded-2xl border border-border" />
+          </div>
           <AvatarBuilder config={avatarConfig} onChange={saveAvatarConfig} />
-          <Button
-            type="button"
-            onClick={persistAvatar}
-            loading={savingAvatar}
-            className={cn(!useAvatar && "animate-pulse-soft")}
-          >
-            <Save size={15} /> Salva e usa questo avatar
+          <Button type="button" onClick={persistAvatar} loading={savingAvatar} className="w-full">
+            <Save size={15} /> Usa questo avatar
           </Button>
-        </CardContent>
-      </Card>
+        </div>
+      </Dialog>
     </div>
   );
 }
