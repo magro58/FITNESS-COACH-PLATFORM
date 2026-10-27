@@ -44,9 +44,14 @@ export const ticketStatusSchema = z.object({
   status: z.enum(["OPEN", "IN_PROGRESS", "CLOSED"]),
 });
 
-export const adminUpdateUserSchema = z.object({
-  isActive: z.boolean(),
-});
+export const adminUpdateUserSchema = z
+  .object({
+    isActive: z.boolean().optional(),
+    role: z.enum(["TRAINER", "STUDENT"]).optional(),
+  })
+  .refine((data) => data.isActive !== undefined || data.role !== undefined, {
+    message: "Nessuna modifica specificata",
+  });
 
 export const adminLinkSchema = z.object({
   trainerId: z.string().min(1, "Seleziona un Personal Trainer"),

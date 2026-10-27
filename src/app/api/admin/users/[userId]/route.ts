@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { requireAdmin, AuthError } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { adminUpdateUserSchema } from "@/lib/validation";
+import { unlinkStudent } from "@/lib/relationships";
 
 export async function GET(
   _req: Request,
@@ -63,7 +64,7 @@ export async function PATCH(
     const { userId } = await params;
 
     if (userId === admin.id) {
-      return NextResponse.json({ error: "Non puoi disabilitare il tuo stesso account" }, { status: 400 });
+      return NextResponse.json({ error: "Non puoi modificare il tuo stesso account" }, { status: 400 });
     }
 
     const body = await req.json().catch(() => null);
@@ -78,9 +79,34 @@ export async function PATCH(
     const existing = await prisma.user.findUnique({ where: { id: userId } });
     if (!existing) return NextResponse.json({ error: "Utente non trovato" }, { status: 404 });
 
+    const { role } = parsed.data;
+    if (role && existing.role === "ADMIN") {
+      return NextResponse.json({ error: "Il ruolo di un admin non si cambia da qui" }, { status: 400 });
+    }
+
+    if (role && role !== existing.role) {
+      // Switching role orphans the old role's active relationships, so clear
+      // them to keep the trainer/student link list and invite codes honest.
+      if (existing.role === "TRAINER") {
+        await prisma.trainerStudent.updateMany({
+          where: { trainerId: userId, status: "ACTIVE" },
+          data: { status: "REMOVED" },
+        });
+        await prisma.inviteCode.updateMany({
+          where: { trainerId: userId, usedAt: null, expiresAt: { gt: new Date() } },
+          data: { expiresAt: new Date() },
+        });
+      } else if (existing.role === "STUDENT") {
+        await unlinkStudent(userId);
+      }
+    }
+
     const user = await prisma.user.update({
       where: { id: userId },
-      data: { isActive: parsed.data.isActive },
+      data: {
+        ...(parsed.data.isActive !== undefined ? { isActive: parsed.data.isActive } : {}),
+        ...(role ? { role } : {}),
+      },
       select: {
         id: true,
         email: true,

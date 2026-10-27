@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { format } from "date-fns";
 import { it } from "date-fns/locale";
-import { ArrowLeft, Ban, CheckCircle2, Trash2, Mail, Calendar, LifeBuoy, Eye } from "lucide-react";
+import { ArrowLeft, Ban, CheckCircle2, Trash2, Mail, Calendar, LifeBuoy, Eye, Repeat } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
@@ -42,6 +42,7 @@ export default function AdminUserDetailPage() {
   const [user, setUser] = useState<AdminUserDetail | null>(null);
   const [busy, setBusy] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
+  const [confirmRoleSwitch, setConfirmRoleSwitch] = useState(false);
 
   function load() {
     fetch(`/api/admin/users/${userId}`)
@@ -64,6 +65,28 @@ export default function AdminUserDetailPage() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Errore");
       toast.success(user.isActive ? "Account disabilitato" : "Account riattivato");
+      load();
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "Errore");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function switchRole() {
+    if (!user) return;
+    const nextRole = user.role === "TRAINER" ? "STUDENT" : "TRAINER";
+    setBusy(true);
+    try {
+      const res = await fetch(`/api/admin/users/${userId}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ role: nextRole }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? "Errore");
+      toast.success(`Ruolo cambiato in ${ROLE_LABELS[nextRole]}`);
+      setConfirmRoleSwitch(false);
       load();
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "Errore");
@@ -187,6 +210,10 @@ export default function AdminUserDetailPage() {
               {user.isActive ? <Ban size={16} /> : <CheckCircle2 size={16} />}
               {user.isActive ? "Disabilita account" : "Riattiva account"}
             </Button>
+            <Button variant="outline" onClick={() => setConfirmRoleSwitch(true)} disabled={busy}>
+              <Repeat size={16} />
+              Cambia ruolo in {user.role === "TRAINER" ? "Allievo" : "Personal Trainer"}
+            </Button>
             <Button variant="danger" onClick={() => setConfirmDelete(true)} disabled={busy}>
               <Trash2 size={16} />
               Elimina account
@@ -208,6 +235,32 @@ export default function AdminUserDetailPage() {
             </Button>
             <Button variant="danger" loading={busy} onClick={deleteUser}>
               <Trash2 size={16} /> Elimina definitivamente
+            </Button>
+          </div>
+        </div>
+      </Dialog>
+
+      <Dialog
+        open={confirmRoleSwitch}
+        onClose={() => setConfirmRoleSwitch(false)}
+        title="Confermi il cambio di ruolo?"
+      >
+        <div className="space-y-4">
+          <p className="text-sm text-muted-foreground">
+            <strong>{user.profile?.displayName ?? user.email}</strong> diventerà{" "}
+            <strong>{user.role === "TRAINER" ? "Allievo" : "Personal Trainer"}</strong>.{" "}
+            {user.role === "TRAINER"
+              ? "Tutti gli allievi attualmente collegati verranno scollegati e i suoi codici invito non usati verranno invalidati."
+              : "Il collegamento con il suo Personal Trainer, se presente, verrà rimosso."}{" "}
+            Schede, allenamenti e altri dati storici restano salvati ma non saranno più visibili
+            nel nuovo ruolo.
+          </p>
+          <div className="flex justify-end gap-2">
+            <Button variant="outline" onClick={() => setConfirmRoleSwitch(false)}>
+              Annulla
+            </Button>
+            <Button variant="primary" loading={busy} onClick={switchRole}>
+              <Repeat size={16} /> Conferma cambio ruolo
             </Button>
           </div>
         </div>
