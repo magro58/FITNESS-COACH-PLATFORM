@@ -3,6 +3,7 @@ import { requireUser, AuthError } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { assertTrainerOwnsStudent } from "@/lib/relationships";
 import { estimate1RM } from "@/lib/training";
+import { muscleGroupLabel } from "@/lib/exercise-taxonomy";
 
 function periodToDays(period: string | null): number | null {
   if (!period || period === "all") return null;
@@ -103,7 +104,7 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ stud
       }
     }
     const volumeByMuscleGroup = [...muscleGroupMap.entries()]
-      .map(([muscleGroup, volume]) => ({ muscleGroup, volume: Math.round(volume) }))
+      .map(([muscleGroup, volume]) => ({ muscleGroup: muscleGroupLabel(muscleGroup), volume: Math.round(volume) }))
       .sort((a, b) => b.volume - a.volume);
 
     // e1RM progression for the selected/most-logged exercise

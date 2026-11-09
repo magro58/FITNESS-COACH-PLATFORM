@@ -8,14 +8,18 @@ export async function GET(req: NextRequest) {
     const trainer = await requireRole("TRAINER");
     const { searchParams } = new URL(req.url);
     const query = searchParams.get("query")?.trim() ?? "";
+    const muscleGroup = searchParams.get("muscleGroup")?.trim() ?? "";
+    const equipmentTier = searchParams.get("equipmentTier")?.trim() ?? "";
 
     const exercises = await prisma.exercise.findMany({
       where: {
         OR: [{ isGlobal: true }, { createdById: trainer.id }],
         ...(query ? { name: { contains: query, mode: "insensitive" } } : {}),
+        ...(muscleGroup ? { muscleGroup } : {}),
+        ...(equipmentTier ? { equipmentTier } : {}),
       },
       orderBy: { name: "asc" },
-      take: 30,
+      take: 60,
     });
 
     return NextResponse.json({ exercises });

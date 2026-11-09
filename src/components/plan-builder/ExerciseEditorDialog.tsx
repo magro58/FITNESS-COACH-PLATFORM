@@ -3,10 +3,11 @@
 import { useState } from "react";
 import { Dialog } from "@/components/ui/Dialog";
 import { Button } from "@/components/ui/Button";
-import { Input, Label, Textarea } from "@/components/ui/Input";
+import { Input, Label, Select, Textarea } from "@/components/ui/Input";
 import { ExercisePicker } from "./ExercisePicker";
 import type { BuilderExercise } from "@/lib/plan-builder-types";
 import { cn } from "@/lib/cn";
+import { MUSCLE_GROUPS } from "@/lib/exercise-taxonomy";
 
 function num(v: string): number | null {
   if (v === "") return null;
@@ -108,11 +109,14 @@ export function ExerciseEditorDialog({
         </div>
         <div>
           <Label className="text-xs">Gruppo muscolare</Label>
-          <Input
-            value={ex.muscleGroup ?? ""}
-            onChange={(e) => set("muscleGroup", e.target.value)}
-            placeholder="Es. Petto, Schiena, Gambe..."
-          />
+          <Select value={ex.muscleGroup ?? ""} onChange={(e) => set("muscleGroup", e.target.value)}>
+            <option value="">Seleziona...</option>
+            {MUSCLE_GROUPS.map((g) => (
+              <option key={g.value} value={g.value}>
+                {g.label}
+              </option>
+            ))}
+          </Select>
         </div>
 
         <section>

@@ -1,0 +1,3042 @@
+[
+  {
+    "name": "Ab wheel rollout",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — ANTI-ESTENSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "ADDOME — anti-estensione",
+    "movementPattern": "Controllo lombo-pelvico"
+  },
+  {
+    "name": "Body saw",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — ANTI-ESTENSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "ADDOME — anti-estensione",
+    "movementPattern": "Controllo lombo-pelvico"
+  },
+  {
+    "name": "Cable crunch",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — FLESSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "ADDOME — flessione",
+    "movementPattern": "Flessione tronco/bacino"
+  },
+  {
+    "name": "Cable dead bug",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — ANTI-ESTENSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "ADDOME — anti-estensione",
+    "movementPattern": "Controllo lombo-pelvico"
+  },
+  {
+    "name": "Cable reverse crunch",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — FLESSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "ADDOME — flessione",
+    "movementPattern": "Flessione tronco/bacino"
+  },
+  {
+    "name": "Crunch macchina",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — FLESSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "ADDOME — flessione",
+    "movementPattern": "Flessione tronco/bacino"
+  },
+  {
+    "name": "Crunch su fitball",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — FLESSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Principiante",
+    "forceLine": "ADDOME — flessione",
+    "movementPattern": "Flessione tronco/bacino"
+  },
+  {
+    "name": "Dead bug zavorrato",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — ANTI-ESTENSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Avanzato",
+    "forceLine": "ADDOME — anti-estensione",
+    "movementPattern": "Controllo lombo-pelvico"
+  },
+  {
+    "name": "Decline crunch zavorrato",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — FLESSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Avanzato",
+    "forceLine": "ADDOME — flessione",
+    "movementPattern": "Flessione tronco/bacino"
+  },
+  {
+    "name": "Garhammer raise",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — FLESSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "ADDOME — flessione",
+    "movementPattern": "Flessione tronco/bacino"
+  },
+  {
+    "name": "Hanging knee raise",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — FLESSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "ADDOME — flessione",
+    "movementPattern": "Flessione tronco/bacino"
+  },
+  {
+    "name": "Hanging leg raise",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — FLESSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Avanzato",
+    "forceLine": "ADDOME — flessione",
+    "movementPattern": "Flessione tronco/bacino"
+  },
+  {
+    "name": "Long-lever plank",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — ANTI-ESTENSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "ADDOME — anti-estensione",
+    "movementPattern": "Controllo lombo-pelvico"
+  },
+  {
+    "name": "Plank RKC",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — ANTI-ESTENSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "ADDOME — anti-estensione",
+    "movementPattern": "Controllo lombo-pelvico"
+  },
+  {
+    "name": "Reverse crunch",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — FLESSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "ADDOME — flessione",
+    "movementPattern": "Flessione tronco/bacino"
+  },
+  {
+    "name": "Ring fallout",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — ANTI-ESTENSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Avanzato",
+    "forceLine": "ADDOME — anti-estensione",
+    "movementPattern": "Controllo lombo-pelvico"
+  },
+  {
+    "name": "Stability ball rollout",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — ANTI-ESTENSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Principiante",
+    "forceLine": "ADDOME — anti-estensione",
+    "movementPattern": "Controllo lombo-pelvico"
+  },
+  {
+    "name": "TRX fallout",
+    "muscleGroup": "ADDOME",
+    "stimulusFamily": "ADDOME — ANTI-ESTENSIONE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Principiante",
+    "forceLine": "ADDOME — anti-estensione",
+    "movementPattern": "Controllo lombo-pelvico"
+  },
+  {
+    "name": "Bayesian cable curl",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — SUPINATO ALLUNGATO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — bicipite brachiale supinato",
+    "movementPattern": "Flessione gomito + supinazione"
+  },
+  {
+    "name": "Cable curl panca inclinata",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — SUPINATO ALLUNGATO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — bicipite brachiale supinato",
+    "movementPattern": "Flessione gomito + supinazione"
+  },
+  {
+    "name": "Cable hammer curl unilaterale",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — NEUTRO / BRACHIALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "BICIPITI — brachiale / brachioradiale",
+    "movementPattern": "Flessione gomito presa neutra/pronata"
+  },
+  {
+    "name": "Cross-body hammer curl",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — NEUTRO / BRACHIALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — brachiale / brachioradiale",
+    "movementPattern": "Flessione gomito presa neutra/pronata"
+  },
+  {
+    "name": "Curl cavo dietro al corpo",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — SUPINATO ALLUNGATO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — bicipite brachiale supinato",
+    "movementPattern": "Flessione gomito + supinazione"
+  },
+  {
+    "name": "Curl manubri alternato supinato",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — SUPINATO ALLUNGATO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — bicipite brachiale supinato",
+    "movementPattern": "Flessione gomito + supinazione"
+  },
+  {
+    "name": "Curl manubri panca inclinata",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — SUPINATO ALLUNGATO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — bicipite brachiale supinato",
+    "movementPattern": "Flessione gomito + supinazione"
+  },
+  {
+    "name": "Hammer curl corda",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — NEUTRO / BRACHIALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — brachiale / brachioradiale",
+    "movementPattern": "Flessione gomito presa neutra/pronata"
+  },
+  {
+    "name": "Hammer curl manubri",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — NEUTRO / BRACHIALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — brachiale / brachioradiale",
+    "movementPattern": "Flessione gomito presa neutra/pronata"
+  },
+  {
+    "name": "Hammer curl panca inclinata",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — NEUTRO / BRACHIALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — brachiale / brachioradiale",
+    "movementPattern": "Flessione gomito presa neutra/pronata"
+  },
+  {
+    "name": "Hammer preacher curl",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — NEUTRO / BRACHIALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — brachiale / brachioradiale",
+    "movementPattern": "Flessione gomito presa neutra/pronata"
+  },
+  {
+    "name": "Preacher curl EZ",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — SUPINATO ALLUNGATO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — bicipite brachiale supinato",
+    "movementPattern": "Flessione gomito + supinazione"
+  },
+  {
+    "name": "Preacher curl macchina",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — SUPINATO ALLUNGATO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — bicipite brachiale supinato",
+    "movementPattern": "Flessione gomito + supinazione"
+  },
+  {
+    "name": "Preacher curl macchina unilaterale",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — SUPINATO ALLUNGATO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "BICIPITI — bicipite brachiale supinato",
+    "movementPattern": "Flessione gomito + supinazione"
+  },
+  {
+    "name": "Reverse cable curl",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — NEUTRO / BRACHIALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — brachiale / brachioradiale",
+    "movementPattern": "Flessione gomito presa neutra/pronata"
+  },
+  {
+    "name": "Reverse curl EZ",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — NEUTRO / BRACHIALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — brachiale / brachioradiale",
+    "movementPattern": "Flessione gomito presa neutra/pronata"
+  },
+  {
+    "name": "Rope hammer curl behind-body",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — NEUTRO / BRACHIALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — brachiale / brachioradiale",
+    "movementPattern": "Flessione gomito presa neutra/pronata"
+  },
+  {
+    "name": "Spider curl",
+    "muscleGroup": "BICIPITI",
+    "stimulusFamily": "BICIPITI — SUPINATO ALLUNGATO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "BICIPITI — bicipite brachiale supinato",
+    "movementPattern": "Flessione gomito + supinazione"
+  },
+  {
+    "name": "Cable row unilaterale gomito alto",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "SCHIENA — ROW UPPER BACK",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "High row cavo bilaterale",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "SCHIENA — ROW UPPER BACK",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "High row cavo unilaterale",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "SCHIENA — ROW UPPER BACK",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "High row chest-supported",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "MAIN — REMATORE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "High row convergente",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "SCHIENA — ROW UPPER BACK",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Iso-lateral row plate-loaded",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "MAIN — REMATORE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Low row plate-loaded",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "MAIN — REMATORE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Pendlay row",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "MAIN — REMATORE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Avanzato",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Pulley presa larga",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "SCHIENA — ROW UPPER BACK",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Rematore Multipower",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "MAIN — REMATORE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Rematore bilanciere",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "MAIN — REMATORE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Rematore chest-supported presa larga",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "SCHIENA — ROW UPPER BACK",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Rematore con elastico gomiti larghi",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "SCHIENA — ROW UPPER BACK",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Rematore macchina convergente",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "MAIN — REMATORE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Rematore manubri busto flesso bilaterale",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "MAIN — REMATORE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Rematore manubri chest-supported 30°",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "MAIN — REMATORE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Rematore manubri panca 30° gomiti larghi",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "SCHIENA — ROW UPPER BACK",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Rematore manubrio unilaterale su panca",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "MAIN — REMATORE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Seal row bilanciere",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "MAIN — REMATORE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Seal row gomiti larghi",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "SCHIENA — ROW UPPER BACK",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "Seal row manubri su panca alta",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "MAIN — REMATORE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "T-bar chest-supported gomiti larghi",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "SCHIENA — ROW UPPER BACK",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "T-bar row chest-supported",
+    "muscleGroup": "CENTRO_SCHIENA",
+    "stimulusFamily": "MAIN — REMATORE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SCHIENA — retrattori scapolari / upper back",
+    "movementPattern": "Remata / retrazione scapolare"
+  },
+  {
+    "name": "45° back extension hip hinge",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — HIP HINGE ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "45° back extension zavorrata hip hinge",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "MAIN — HIP HINGE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Avanzato",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "B-stance RDL Multipower",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — HIP HINGE ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Cable RDL",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — HIP HINGE ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Cable pull-through",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — HIP HINGE ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Good morning Multipower",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "MAIN — HIP HINGE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Avanzato",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Good morning con elastico",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — HIP HINGE ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Good morning leggero",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — HIP HINGE ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Avanzato",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Good morning safety bar",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "MAIN — HIP HINGE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Avanzato",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Kickstand RDL",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — HIP HINGE ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Leg curl cavo cavigliera",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — LEG CURL",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — flessione ginocchio",
+    "movementPattern": "Knee flexion"
+  },
+  {
+    "name": "Leg curl con asciugamano su pavimento liscio",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — LEG CURL",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — flessione ginocchio",
+    "movementPattern": "Knee flexion"
+  },
+  {
+    "name": "Leg curl in piedi unilaterale",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — LEG CURL",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "FEMORALI — flessione ginocchio",
+    "movementPattern": "Knee flexion"
+  },
+  {
+    "name": "Leg curl prono con elastico",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — LEG CURL",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — flessione ginocchio",
+    "movementPattern": "Knee flexion"
+  },
+  {
+    "name": "Leg curl sdraiato",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — LEG CURL",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — flessione ginocchio",
+    "movementPattern": "Knee flexion"
+  },
+  {
+    "name": "Leg curl sdraiato unilaterale",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — LEG CURL",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "FEMORALI — flessione ginocchio",
+    "movementPattern": "Knee flexion"
+  },
+  {
+    "name": "Leg curl seduto",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — LEG CURL",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — flessione ginocchio",
+    "movementPattern": "Knee flexion"
+  },
+  {
+    "name": "Leg curl seduto unilaterale",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — LEG CURL",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "FEMORALI — flessione ginocchio",
+    "movementPattern": "Knee flexion"
+  },
+  {
+    "name": "Nordic curl assistito",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — LEG CURL",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Avanzato",
+    "forceLine": "FEMORALI — flessione ginocchio",
+    "movementPattern": "Knee flexion"
+  },
+  {
+    "name": "Pull-through con elastico",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — HIP HINGE ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "RDL Multipower",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — HIP HINGE ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "RDL bilanciere",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — HIP HINGE ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "RDL manubri",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — HIP HINGE ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "RDL manubri deficit su step",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "MAIN — HIP HINGE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "RDL trap bar",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "MAIN — HIP HINGE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Romanian deadlift Multipower",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "MAIN — HIP HINGE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Romanian deadlift bilanciere",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "MAIN — HIP HINGE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Romanian deadlift manubri",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "MAIN — HIP HINGE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Single-leg RDL manubrio",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — HIP HINGE ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Slider leg curl",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — LEG CURL",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — flessione ginocchio",
+    "movementPattern": "Knee flexion"
+  },
+  {
+    "name": "Stacco gambe semi-tese",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "MAIN — HIP HINGE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Stacco manubri gambe semi-tese",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "MAIN — HIP HINGE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — hip hinge / lunghezza lunga",
+    "movementPattern": "Estensione d'anca"
+  },
+  {
+    "name": "Swiss ball leg curl",
+    "muscleGroup": "GAMBE_POSTERIORE",
+    "stimulusFamily": "FEMORALI — LEG CURL",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "FEMORALI — flessione ginocchio",
+    "movementPattern": "Knee flexion"
+  },
+  {
+    "name": "Belt squat",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Bulgarian split squat pesante manubri",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Bulgarian split squat quad bias",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — SQUAT ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Cyclist squat",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — SQUAT ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Front squat",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Avanzato",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Goblet squat pesante box-free",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Goblet squat pesante talloni rialzati",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Goblet squat talloni rialzati",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — SQUAT ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Hack squat",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Hack squat moderato",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — SQUAT ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Heel-elevated dumbbell squat",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — SQUAT ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Heel-elevated dumbbell squat pesante",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Leg extension 1 e 1/2 reps",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — ESTENSIONE GINOCCHIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — estensione ginocchio / retto femorale+vasti",
+    "movementPattern": "Estensione di ginocchio"
+  },
+  {
+    "name": "Leg extension bilaterale",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — ESTENSIONE GINOCCHIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — estensione ginocchio / retto femorale+vasti",
+    "movementPattern": "Estensione di ginocchio"
+  },
+  {
+    "name": "Leg extension con pausa in allungamento",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — ESTENSIONE GINOCCHIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — estensione ginocchio / retto femorale+vasti",
+    "movementPattern": "Estensione di ginocchio"
+  },
+  {
+    "name": "Leg extension unilaterale",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — ESTENSIONE GINOCCHIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "QUADRICIPITI — estensione ginocchio / retto femorale+vasti",
+    "movementPattern": "Estensione di ginocchio"
+  },
+  {
+    "name": "Leverage squat machine",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Pendulum squat",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Pendulum squat moderato",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — SQUAT ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Peterson step-up",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — ESTENSIONE GINOCCHIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — estensione ginocchio / retto femorale+vasti",
+    "movementPattern": "Estensione di ginocchio"
+  },
+  {
+    "name": "Pressa 45°",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Pressa orizzontale",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Reverse Nordic",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — ESTENSIONE GINOCCHIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Avanzato",
+    "forceLine": "QUADRICIPITI — estensione ginocchio / retto femorale+vasti",
+    "movementPattern": "Estensione di ginocchio"
+  },
+  {
+    "name": "Reverse lunge quad bias",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — SQUAT ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Sissy squat assistito",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — ESTENSIONE GINOCCHIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — estensione ginocchio / retto femorale+vasti",
+    "movementPattern": "Estensione di ginocchio"
+  },
+  {
+    "name": "Spanish squat",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — ESTENSIONE GINOCCHIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — estensione ginocchio / retto femorale+vasti",
+    "movementPattern": "Estensione di ginocchio"
+  },
+  {
+    "name": "Split squat quad bias",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "QUAD — SQUAT ACCESSORIO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Squat Multipower talloni rialzati",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Squat bilanciere su box",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "Squat high-bar",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Avanzato",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "V-squat machine",
+    "muscleGroup": "GAMBE_QUADRICIPITI",
+    "stimulusFamily": "MAIN — KNEE DOMINANT PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "QUADRICIPITI — knee-dominant / vasti",
+    "movementPattern": "Squat/press knee-dominant"
+  },
+  {
+    "name": "45° back extension glute bias",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ALLUNGATO / UNILATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — allungamento / unilaterale",
+    "movementPattern": "Estensione d'anca in lunghezza"
+  },
+  {
+    "name": "Bulgarian split squat glute bias",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ALLUNGATO / UNILATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "GLUTEI — allungamento / unilaterale",
+    "movementPattern": "Estensione d'anca in lunghezza"
+  },
+  {
+    "name": "Cable hip extension",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ACCORCIATO / HIP THRUST",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Cable kickback",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ACCORCIATO / HIP THRUST",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Cable reverse lunge",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ALLUNGATO / UNILATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — allungamento / unilaterale",
+    "movementPattern": "Estensione d'anca in lunghezza"
+  },
+  {
+    "name": "Deficit reverse lunge",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ALLUNGATO / UNILATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — allungamento / unilaterale",
+    "movementPattern": "Estensione d'anca in lunghezza"
+  },
+  {
+    "name": "Frog pump zavorrato",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ACCORCIATO / HIP THRUST",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Avanzato",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Front-foot elevated split squat glute bias",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ALLUNGATO / UNILATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — allungamento / unilaterale",
+    "movementPattern": "Estensione d'anca in lunghezza"
+  },
+  {
+    "name": "Glute bridge bilanciere",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ACCORCIATO / HIP THRUST",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Glute bridge bilanciere pesante",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "MAIN — HIP THRUST PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Glute bridge con elastico",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ACCORCIATO / HIP THRUST",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Glute bridge manubrio pesante",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "MAIN — HIP THRUST PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Glute bridge manubrio piedi rialzati",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "MAIN — HIP THRUST PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Glute drive macchina",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ACCORCIATO / HIP THRUST",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Glute drive macchina pesante",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "MAIN — HIP THRUST PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Hip thrust Multipower",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ACCORCIATO / HIP THRUST",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Hip thrust Multipower pesante",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "MAIN — HIP THRUST PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Hip thrust bilanciere",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ACCORCIATO / HIP THRUST",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Hip thrust bilanciere pesante",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "MAIN — HIP THRUST PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Hip thrust macchina",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ACCORCIATO / HIP THRUST",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Hip thrust macchina pesante",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "MAIN — HIP THRUST PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Hip thrust manubrio",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ACCORCIATO / HIP THRUST",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Hip thrust manubrio su panca",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "MAIN — HIP THRUST PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Hip thrust monopodalico spalle su panca",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "MAIN — HIP THRUST PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Hip thrust unilaterale",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ACCORCIATO / HIP THRUST",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Kas glute bridge",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ACCORCIATO / HIP THRUST",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — accorciamento / hip thrust",
+    "movementPattern": "Estensione d'anca in accorciamento"
+  },
+  {
+    "name": "Reverse lunge lungo",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ALLUNGATO / UNILATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — allungamento / unilaterale",
+    "movementPattern": "Estensione d'anca in lunghezza"
+  },
+  {
+    "name": "Single-leg RDL glute bias",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ALLUNGATO / UNILATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "GLUTEI — allungamento / unilaterale",
+    "movementPattern": "Estensione d'anca in lunghezza"
+  },
+  {
+    "name": "Step-up alto",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ALLUNGATO / UNILATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "GLUTEI — allungamento / unilaterale",
+    "movementPattern": "Estensione d'anca in lunghezza"
+  },
+  {
+    "name": "Walking lunge passo lungo",
+    "muscleGroup": "GLUTEI",
+    "stimulusFamily": "GLUTEI — ALLUNGATO / UNILATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "GLUTEI — allungamento / unilaterale",
+    "movementPattern": "Estensione d'anca in lunghezza"
+  },
+  {
+    "name": "Cable pullover inginocchiato",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — ESTENSIONE DI SPALLA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — estensione di spalla",
+    "movementPattern": "Estensione di spalla"
+  },
+  {
+    "name": "Chin-up assistito con elastico",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Chin-up zavorrato",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Avanzato",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Lat machine convergente",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Lat machine neutra stretta",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — TIRATA VERTICALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Lat machine presa neutra stretta",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Lat machine presa prona media",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Lat machine presa supina",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Lat machine prona media",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — TIRATA VERTICALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Lat machine supina",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — TIRATA VERTICALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Lat machine unilaterale",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — TIRATA VERTICALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Pulldown convergente",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — TIRATA VERTICALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Pulldown iso-laterale",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Pulldown plate-loaded neutro",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Pulldown presa larga prona",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — TIRATA VERTICALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Pulldown semi-supino",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — TIRATA VERTICALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Pulldown unilaterale braccio teso",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — ESTENSIONE DI SPALLA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "DORSALI — estensione di spalla",
+    "movementPattern": "Estensione di spalla"
+  },
+  {
+    "name": "Pulldown unilaterale plate-loaded",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — TIRATA VERTICALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Pullover barra EZ su panca",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — ESTENSIONE DI SPALLA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "DORSALI — estensione di spalla",
+    "movementPattern": "Estensione di spalla"
+  },
+  {
+    "name": "Pullover cavo alto corda",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — ESTENSIONE DI SPALLA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — estensione di spalla",
+    "movementPattern": "Estensione di spalla"
+  },
+  {
+    "name": "Pullover cavo con barra EZ",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — ESTENSIONE DI SPALLA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — estensione di spalla",
+    "movementPattern": "Estensione di spalla"
+  },
+  {
+    "name": "Pullover cavo unilaterale seduto",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — ESTENSIONE DI SPALLA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "DORSALI — estensione di spalla",
+    "movementPattern": "Estensione di spalla"
+  },
+  {
+    "name": "Pullover con elastico in ginocchio",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — ESTENSIONE DI SPALLA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — estensione di spalla",
+    "movementPattern": "Estensione di spalla"
+  },
+  {
+    "name": "Pullover macchina",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — ESTENSIONE DI SPALLA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — estensione di spalla",
+    "movementPattern": "Estensione di spalla"
+  },
+  {
+    "name": "Pullover manubrio",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — ESTENSIONE DI SPALLA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — estensione di spalla",
+    "movementPattern": "Estensione di spalla"
+  },
+  {
+    "name": "Pullover manubrio a terra",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — ESTENSIONE DI SPALLA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — estensione di spalla",
+    "movementPattern": "Estensione di spalla"
+  },
+  {
+    "name": "Pullover manubrio panca trasversale",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — ESTENSIONE DI SPALLA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — estensione di spalla",
+    "movementPattern": "Estensione di spalla"
+  },
+  {
+    "name": "Straight-arm pulldown con elastico",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — ESTENSIONE DI SPALLA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — estensione di spalla",
+    "movementPattern": "Estensione di spalla"
+  },
+  {
+    "name": "Straight-arm pulldown sbarra",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — ESTENSIONE DI SPALLA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — estensione di spalla",
+    "movementPattern": "Estensione di spalla"
+  },
+  {
+    "name": "Trazioni assistite",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — TIRATA VERTICALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Trazioni assistite con elastico",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Trazioni assistite macchina",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Trazioni neutre",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — TIRATA VERTICALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Trazioni neutre corpo libero",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Trazioni presa neutra zavorrate",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Avanzato",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Trazioni presa prona zavorrate",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Avanzato",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Trazioni presa supina zavorrate",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Avanzato",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Trazioni prone",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "DORSALI — TIRATA VERTICALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Trazioni prone corpo libero",
+    "muscleGroup": "GRAN_DORSALE",
+    "stimulusFamily": "MAIN — TIRATA VERTICALE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "DORSALI — tirata verticale",
+    "movementPattern": "Adduzione/estensione di spalla"
+  },
+  {
+    "name": "Cable fly da panca",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — ADDUZIONE / FLY",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Cable fly unilaterale",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — ADDUZIONE / FLY",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Chest press convergente",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Chest press inclinata convergente",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Chest press inclinata iso-laterale",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS INCLINATA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Chest press iso-laterale",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Chest press plate-loaded",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Croci ai cavi high-to-low",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — ADDUZIONE / FLY",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / discendente",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Croci ai cavi low-to-high",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — ADDUZIONE / FLY",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Croci ai cavi mid",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — ADDUZIONE / FLY",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Croci con elastico in piedi",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — ADDUZIONE / FLY",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Croci manubri inclinata",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — ADDUZIONE / FLY",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Croci manubri panca leggermente declinata",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — ADDUZIONE / FLY",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Croci manubri piana",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — ADDUZIONE / FLY",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Dips busto inclinato",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS ORIZZONTALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Distensioni manubri inclinata 15–30°",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Distensioni manubri piana",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Floor press bilanciere",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Floor press manubri",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS ORIZZONTALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Floor press manubri pesante",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Hammer Strength chest press",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Panca inclinata Multipower 15–30°",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Panca inclinata Multipower 20–30°",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS INCLINATA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Panca inclinata bilanciere 15–30°",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Panca inclinata bilanciere 20–30°",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS INCLINATA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Panca inclinata manubri 20–30°",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS INCLINATA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Panca piana Multipower",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Panca piana bilanciere",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Panca piana manubri",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS ORIZZONTALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Pec deck",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — ADDUZIONE / FLY",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Pec deck unilaterale",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — ADDUZIONE / FLY",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Press inclinata cavi",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS INCLINATA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Press inclinata con elastico",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS INCLINATA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Press inclinata plate-loaded",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS INCLINATA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Press orizzontale plate-loaded",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS ORIZZONTALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Push-up",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS ORIZZONTALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Push-up piedi rialzati",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS INCLINATA",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "PETTO — clavicolare / inclinata",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Push-up zavorrato",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "PETTO — PRESS ORIZZONTALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Avanzato",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Push-up zavorrato pesante",
+    "muscleGroup": "PETTO",
+    "stimulusFamily": "MAIN — PRESS PETTO PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "PETTO — sterno-costale / orizzontale",
+    "movementPattern": "Spinta/adduzione di spalla"
+  },
+  {
+    "name": "Calf press alla pressa",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO ESTESO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — gastrocnemio",
+    "movementPattern": "Plantarflessione ginocchio esteso"
+  },
+  {
+    "name": "Calf raise Multipower",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO ESTESO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — gastrocnemio",
+    "movementPattern": "Plantarflessione ginocchio esteso"
+  },
+  {
+    "name": "Calf raise hack squat",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO ESTESO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — gastrocnemio",
+    "movementPattern": "Plantarflessione ginocchio esteso"
+  },
+  {
+    "name": "Calf raise su step con manubrio",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO ESTESO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — gastrocnemio",
+    "movementPattern": "Plantarflessione ginocchio esteso"
+  },
+  {
+    "name": "Calf raise su step corpo libero",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO ESTESO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — gastrocnemio",
+    "movementPattern": "Plantarflessione ginocchio esteso"
+  },
+  {
+    "name": "Calf seduto Multipower",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO FLESSO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — soleo",
+    "movementPattern": "Plantarflessione ginocchio flesso"
+  },
+  {
+    "name": "Calf seduto con manubrio",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO FLESSO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — soleo",
+    "movementPattern": "Plantarflessione ginocchio flesso"
+  },
+  {
+    "name": "Donkey calf raise",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO ESTESO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — gastrocnemio",
+    "movementPattern": "Plantarflessione ginocchio esteso"
+  },
+  {
+    "name": "Seated calf raise",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO FLESSO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — soleo",
+    "movementPattern": "Plantarflessione ginocchio flesso"
+  },
+  {
+    "name": "Seated calf raise con bilanciere",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO FLESSO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "POLPACCI — soleo",
+    "movementPattern": "Plantarflessione ginocchio flesso"
+  },
+  {
+    "name": "Seated calf raise con elastico",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO FLESSO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — soleo",
+    "movementPattern": "Plantarflessione ginocchio flesso"
+  },
+  {
+    "name": "Seated calf raise macchina plate-loaded",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO FLESSO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — soleo",
+    "movementPattern": "Plantarflessione ginocchio flesso"
+  },
+  {
+    "name": "Seated calf raise unilaterale",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO FLESSO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "POLPACCI — soleo",
+    "movementPattern": "Plantarflessione ginocchio flesso"
+  },
+  {
+    "name": "Single-leg calf Multipower",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO ESTESO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "POLPACCI — gastrocnemio",
+    "movementPattern": "Plantarflessione ginocchio esteso"
+  },
+  {
+    "name": "Single-leg standing calf raise",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO ESTESO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "POLPACCI — gastrocnemio",
+    "movementPattern": "Plantarflessione ginocchio esteso"
+  },
+  {
+    "name": "Soleus raise alla leg press ginocchio flesso",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO FLESSO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — soleo",
+    "movementPattern": "Plantarflessione ginocchio flesso"
+  },
+  {
+    "name": "Standing calf raise macchina",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO ESTESO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — gastrocnemio",
+    "movementPattern": "Plantarflessione ginocchio esteso"
+  },
+  {
+    "name": "Standing calf raise plate-loaded",
+    "muscleGroup": "POLPACCI",
+    "stimulusFamily": "POLPACCI — GINOCCHIO ESTESO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "POLPACCI — gastrocnemio",
+    "movementPattern": "Plantarflessione ginocchio esteso"
+  },
+  {
+    "name": "Alzata laterale cavo basso unilaterale",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — LATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "SPALLE — deltoide laterale",
+    "movementPattern": "Abduzione di spalla"
+  },
+  {
+    "name": "Alzata laterale cavo behind-body",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — LATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide laterale",
+    "movementPattern": "Abduzione di spalla"
+  },
+  {
+    "name": "Alzata laterale panca inclinata",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — LATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide laterale",
+    "movementPattern": "Abduzione di spalla"
+  },
+  {
+    "name": "Alzata laterale unilaterale appoggiato",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — LATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide laterale",
+    "movementPattern": "Abduzione di spalla"
+  },
+  {
+    "name": "Alzate laterali con elastico",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — LATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide laterale",
+    "movementPattern": "Abduzione di spalla"
+  },
+  {
+    "name": "Alzate laterali macchina",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — LATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide laterale",
+    "movementPattern": "Abduzione di spalla"
+  },
+  {
+    "name": "Alzate laterali macchina unilaterali",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — LATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide laterale",
+    "movementPattern": "Abduzione di spalla"
+  },
+  {
+    "name": "Alzate laterali manubri",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — LATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide laterale",
+    "movementPattern": "Abduzione di spalla"
+  },
+  {
+    "name": "Arnold press seduto",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "MAIN — PRESS SPALLE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — anteriore + laterale (press)",
+    "movementPattern": "Spinta verticale"
+  },
+  {
+    "name": "Cable Y-raise",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — LATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide laterale",
+    "movementPattern": "Abduzione di spalla"
+  },
+  {
+    "name": "Cable rear delt fly unilaterale",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — POSTERIORE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "SPALLE — deltoide posteriore",
+    "movementPattern": "Abduzione orizzontale / estensione"
+  },
+  {
+    "name": "Croci inverse cavi",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — POSTERIORE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide posteriore",
+    "movementPattern": "Abduzione orizzontale / estensione"
+  },
+  {
+    "name": "Croci inverse manubri chest-supported",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — POSTERIORE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide posteriore",
+    "movementPattern": "Abduzione orizzontale / estensione"
+  },
+  {
+    "name": "Face pull alto",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — POSTERIORE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide posteriore",
+    "movementPattern": "Abduzione orizzontale / estensione"
+  },
+  {
+    "name": "Landmine press bilaterale",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "MAIN — PRESS SPALLE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — anteriore + laterale (press)",
+    "movementPattern": "Spinta verticale"
+  },
+  {
+    "name": "Lateral raise cuff al cavo",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — LATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide laterale",
+    "movementPattern": "Abduzione di spalla"
+  },
+  {
+    "name": "Lateral raise doppio cavo",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — LATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide laterale",
+    "movementPattern": "Abduzione di spalla"
+  },
+  {
+    "name": "Lean-away cable lateral raise",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — LATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide laterale",
+    "movementPattern": "Abduzione di spalla"
+  },
+  {
+    "name": "Lean-away lateral raise manubrio",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — LATERALE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide laterale",
+    "movementPattern": "Abduzione di spalla"
+  },
+  {
+    "name": "Military press bilanciere in piedi",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "MAIN — PRESS SPALLE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "SPALLE — anteriore + laterale (press)",
+    "movementPattern": "Spinta verticale"
+  },
+  {
+    "name": "Military press bilanciere seduto",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "MAIN — PRESS SPALLE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Home gym",
+    "difficulty": "Intermedio",
+    "forceLine": "SPALLE — anteriore + laterale (press)",
+    "movementPattern": "Spinta verticale"
+  },
+  {
+    "name": "Rear delt cable cross-body",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — POSTERIORE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide posteriore",
+    "movementPattern": "Abduzione orizzontale / estensione"
+  },
+  {
+    "name": "Rear delt fly panca inclinata",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — POSTERIORE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide posteriore",
+    "movementPattern": "Abduzione orizzontale / estensione"
+  },
+  {
+    "name": "Rear delt machine chest-supported",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — POSTERIORE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide posteriore",
+    "movementPattern": "Abduzione orizzontale / estensione"
+  },
+  {
+    "name": "Rear delt row chest-supported",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — POSTERIORE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide posteriore",
+    "movementPattern": "Abduzione orizzontale / estensione"
+  },
+  {
+    "name": "Reverse pec deck",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "SPALLE — POSTERIORE",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — deltoide posteriore",
+    "movementPattern": "Abduzione orizzontale / estensione"
+  },
+  {
+    "name": "Shoulder press Multipower",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "MAIN — PRESS SPALLE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — anteriore + laterale (press)",
+    "movementPattern": "Spinta verticale"
+  },
+  {
+    "name": "Shoulder press iso-laterale",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "MAIN — PRESS SPALLE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — anteriore + laterale (press)",
+    "movementPattern": "Spinta verticale"
+  },
+  {
+    "name": "Shoulder press macchina convergente",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "MAIN — PRESS SPALLE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — anteriore + laterale (press)",
+    "movementPattern": "Spinta verticale"
+  },
+  {
+    "name": "Shoulder press manubri in piedi",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "MAIN — PRESS SPALLE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — anteriore + laterale (press)",
+    "movementPattern": "Spinta verticale"
+  },
+  {
+    "name": "Shoulder press manubri seduto",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "MAIN — PRESS SPALLE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — anteriore + laterale (press)",
+    "movementPattern": "Spinta verticale"
+  },
+  {
+    "name": "Shoulder press plate-loaded",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "MAIN — PRESS SPALLE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "SPALLE — anteriore + laterale (press)",
+    "movementPattern": "Spinta verticale"
+  },
+  {
+    "name": "Z-press manubri a terra",
+    "muscleGroup": "SPALLE",
+    "stimulusFamily": "MAIN — PRESS SPALLE PESANTE",
+    "role": "MAIN",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Intermedio",
+    "forceLine": "SPALLE — anteriore + laterale (press)",
+    "movementPattern": "Spinta verticale"
+  },
+  {
+    "name": "Close-grip push-up",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — PRESSDOWN",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — laterale/mediale + lungo",
+    "movementPattern": "Estensione gomito con braccio basso"
+  },
+  {
+    "name": "Cross-body cable extension",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — PRESSDOWN",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — laterale/mediale + lungo",
+    "movementPattern": "Estensione gomito con braccio basso"
+  },
+  {
+    "name": "Dips fra due panche",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — PRESSDOWN",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — laterale/mediale + lungo",
+    "movementPattern": "Estensione gomito con braccio basso"
+  },
+  {
+    "name": "Dips machine triceps bias",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — PRESSDOWN",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "TRICIPITI — laterale/mediale + lungo",
+    "movementPattern": "Estensione gomito con braccio basso"
+  },
+  {
+    "name": "Estensione overhead cavo corda",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — OVERHEAD / CAPO LUNGO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — capo lungo in allungamento",
+    "movementPattern": "Estensione gomito con spalla flessa"
+  },
+  {
+    "name": "Estensione overhead cavo singolo",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — OVERHEAD / CAPO LUNGO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — capo lungo in allungamento",
+    "movementPattern": "Estensione gomito con spalla flessa"
+  },
+  {
+    "name": "French press EZ inclinata",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — OVERHEAD / CAPO LUNGO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Home gym",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — capo lungo in allungamento",
+    "movementPattern": "Estensione gomito con spalla flessa"
+  },
+  {
+    "name": "French press cavo su panca",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — OVERHEAD / CAPO LUNGO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — capo lungo in allungamento",
+    "movementPattern": "Estensione gomito con spalla flessa"
+  },
+  {
+    "name": "French press manubrio singolo",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — OVERHEAD / CAPO LUNGO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — capo lungo in allungamento",
+    "movementPattern": "Estensione gomito con spalla flessa"
+  },
+  {
+    "name": "Kickback manubrio appoggiato",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — PRESSDOWN",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — laterale/mediale + lungo",
+    "movementPattern": "Estensione gomito con braccio basso"
+  },
+  {
+    "name": "Overhead extension barra EZ al cavo",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — OVERHEAD / CAPO LUNGO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — capo lungo in allungamento",
+    "movementPattern": "Estensione gomito con spalla flessa"
+  },
+  {
+    "name": "Overhead extension macchina",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — OVERHEAD / CAPO LUNGO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — capo lungo in allungamento",
+    "movementPattern": "Estensione gomito con spalla flessa"
+  },
+  {
+    "name": "PJR pullover",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — OVERHEAD / CAPO LUNGO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — capo lungo in allungamento",
+    "movementPattern": "Estensione gomito con spalla flessa"
+  },
+  {
+    "name": "Pressdown macchina",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — PRESSDOWN",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — laterale/mediale + lungo",
+    "movementPattern": "Estensione gomito con braccio basso"
+  },
+  {
+    "name": "Pushdown barra V",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — PRESSDOWN",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — laterale/mediale + lungo",
+    "movementPattern": "Estensione gomito con braccio basso"
+  },
+  {
+    "name": "Pushdown con elastico",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — PRESSDOWN",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — laterale/mediale + lungo",
+    "movementPattern": "Estensione gomito con braccio basso"
+  },
+  {
+    "name": "Pushdown corda",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — PRESSDOWN",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — laterale/mediale + lungo",
+    "movementPattern": "Estensione gomito con braccio basso"
+  },
+  {
+    "name": "Pushdown cuff unilaterale",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — PRESSDOWN",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "TRICIPITI — laterale/mediale + lungo",
+    "movementPattern": "Estensione gomito con braccio basso"
+  },
+  {
+    "name": "Pushdown sbarra",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — PRESSDOWN",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — laterale/mediale + lungo",
+    "movementPattern": "Estensione gomito con braccio basso"
+  },
+  {
+    "name": "Pushdown unilaterale presa neutra",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — PRESSDOWN",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "TRICIPITI — laterale/mediale + lungo",
+    "movementPattern": "Estensione gomito con braccio basso"
+  },
+  {
+    "name": "Pushdown unilaterale supino",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — PRESSDOWN",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Palestra completa",
+    "difficulty": "Intermedio",
+    "forceLine": "TRICIPITI — laterale/mediale + lungo",
+    "movementPattern": "Estensione gomito con braccio basso"
+  },
+  {
+    "name": "Skull crusher DB rolling",
+    "muscleGroup": "TRICIPITI",
+    "stimulusFamily": "TRICIPITI — OVERHEAD / CAPO LUNGO",
+    "role": "ACCESSORIO",
+    "equipmentTier": "Attrezzatura limitata",
+    "difficulty": "Principiante",
+    "forceLine": "TRICIPITI — capo lungo in allungamento",
+    "movementPattern": "Estensione gomito con spalla flessa"
+  }
+]

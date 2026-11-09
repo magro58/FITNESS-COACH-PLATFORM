@@ -131,6 +131,15 @@ model Exercise {
   createdBy   User?    @relation("ExerciseCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
   createdAt   DateTime @default(now())
 
+  // Catalog taxonomy (see prisma/data/exercises.json) — null on exercises
+  // created before this taxonomy existed, or added freehand by a trainer.
+  stimulusFamily  String? // e.g. "MAIN — PRESS PETTO PESANTE"
+  role            String? // "MAIN" | "ACCESSORIO"
+  equipmentTier   String? // "Attrezzatura limitata" | "Home gym" | "Palestra completa"
+  difficulty      String? // "Principiante" | "Intermedio" | "Avanzato"
+  forceLine       String? // region / force line, e.g. "PETTO — sterno-costale / orizzontale"
+  movementPattern String? // e.g. "Spinta/adduzione di spalla"
+
   planExercises PlanExercise[]
 
   @@index([muscleGroup])
